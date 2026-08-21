@@ -1,0 +1,58 @@
+customer_id,name,age,city,signup_date,price,email,membership
+C-1001,Ann Smith,25,New York,2026-01-15,"$1,299.00",ann.smith@example.com,gold
+C-1002,Brian Ochoa,thirty,Boston,2026-01-17,45.50,b.ochoa@example.com,silver
+C-1003,Carla Reyes,41,Chicago,2026-01-19,230.00,carla.r@example.com,gold
+C-1004,Devon Lee,N/A,Boston,2026-01-21,$89.99,devon.lee@example.com,bronze
+C-1005,Elena Ford,34,new york,2026-01-22,"1,050.00",e.ford@example.com,gold
+C-1006,Frank Nguyen,28,Chicago,01/23/2026,62.75,,silver
+C-1007,Grace Adeyemi,,Seattle,2026-01-25,310.20,grace.a@example.com,bronze
+C-1008,Hector Diaz,52, Boston ,2026-01-26,USD 75.00,hector.d@example.com,silver
+C-1009,Imani Brooks,forty-two,Atlanta,2026-01-28,"$2,480.00",imani.b@example.com,gold
+C-1010,Jonas Weber,39,Seattle,2026-01-29,18.00,jonas.w@example.com,bronze
+C-1011,Keisha Palmer,31,Atlanta,2026-02-01,n/a,keisha.p@example.com,silver
+C-1012,Luis Marchetti,-3,Chicago,2026-02-02,144.10,luis.m@example.com,bronze
+C-1013,Mona Haddad,27,NYC,2026-02-03,$540.00,mona.h@example.com,gold
+C-1014,Noah Kim,45,Boston,2026-02-05,,noah.kim@example.com,silver
+C-1015,Olivia Santos,999,Seattle,2026-02-06,76.40,olivia.s@example.com,bronze
+C-1016,Peter Owusu,36,Atlanta,Feb 7 2026,"1,875.25",peter.o@example.com,gold
+C-1017,Quinn Baptiste,22,Chicago,2026-02-09,$33.00,,bronze
+C-1018,Rosa Delgado,58,new york,2026-02-10,410.00,rosa.d@example.com,silver
+C-1019,Samuel Achebe,29.0,Boston,2026-02-11,95.60,sam.a@example.com,bronze
+C-1020,Tara Whitfield,47,Seattle,2026-02-12,"$1,120.00",tara.w@example.com,gold
+C-1021,Umar Sesay,33,Atlanta,2026-02-14,58.85,umar.s@example.com,silver
+C-1022,Vera Lindqvist,unknown,Chicago,2026-02-15,267.30,vera.l@example.com,bronze
+C-1023,Wesley Tran,40,NEW YORK,2026-02-16,$720.00,wes.tran@example.com,gold
+C-1024,Xiomara Peña,26,Boston,2026-02-18,49.99,xio.p@example.com,bronze
+C-1025,Yusuf Bello,61,Seattle,2026-02-19,"1,340.75",yusuf.b@example.com,gold
+C-1026,Zara Mitchell,35,Atlanta,2026-02-20,$210.00,,silver
+C-1027,Aaron Cole,N/A,Chicago,2026-02-22,88.20,aaron.c@example.com,bronze
+C-1028,Bianca Rossi,38,new york,2026-02-23,615.40,bianca.r@example.com,gold
+C-1029,Caleb Johnson,24,Boston,02/24/2026,$27.50,caleb.j@example.com,bronze
+C-1030,Dalia Farouk,50,Seattle,2026-02-25,980.00,dalia.f@example.com,silver
+C-1031,Emeka Nwosu,43,Atlanta,2026-02-26,132.65,emeka.n@example.com,bronze
+C-1032,Farah Aziz,twenty,Chicago,2026-02-27,$455.00,farah.a@example.com,gold
+C-1033,Gabriel Moreau,37,NYC,2026-03-01,70.10,gabriel.m@example.com,silver
+C-1034,Hannah Osei,30,Boston,2026-03-02,,hannah.o@example.com,bronze
+C-1035,Ibrahim Toure,55,Seattle,2026-03-03,"1,690.00",ibrahim.t@example.com,gold
+C-1036,Julia Kaminski,23,Atlanta,2026-03-05,$41.25,julia.k@example.com,bronze
+C-1037,Kwame Boateng,46,Chicago,2026-03-06,525.90,kwame.b@example.com,silver
+C-1038,Lena Petrov,,new york,2026-03-07,163.00,lena.p@example.com,bronze
+C-1039,Marcus Hill,32,Boston,2026-03-09,"$2,015.00",marcus.h@example.com,gold
+C-1040,Nadia Chowdhury,48,Seattle,2026-03-10,84.45,nadia.c@example.com,silver
+C-1041,Omar Haddad,21,Atlanta,2026-03-11,-,omar.h@example.com,bronze
+C-1042,Priya Raman,44,Chicago,2026-03-12,377.80,priya.r@example.com,gold
+C-1043,Quentin Dubois,57,NEW YORK,2026-03-13,$66.00,,silver
+C-1044,Rachel Amoah,29,Boston,Mar 15 2026,"1,208.55",rachel.a@example.com,gold
+C-1045,Silas Berhane,42,Seattle,2026-03-16,199.99,silas.b@example.com,bronze
+C-1046,Tamara Novak,N/A,Atlanta,2026-03-17,53.30,tamara.n@example.com,silver
+C-1047,Uche Okafor,51,Chicago,2026-03-18,$845.00,uche.o@example.com,gold
+C-1048,Valeria Cruz,26,new york,2026-03-19,112.70,valeria.c@example.com,bronze
+C-1049,Wanjiru Kamau,39,Boston,2026-03-20,690.00,wanjiru.k@example.com,silver
+C-1050,Xander Ellis,sixty,Seattle,2026-03-22,$38.40,xander.e@example.com,bronze
+C-1051,Yara Mansour,34,Atlanta,2026-03-23,"1,455.00",yara.m@example.com,gold
+C-1052,Zeke Alvarez,49,Chicago,2026-03-24,247.15,zeke.a@example.com,silver
+C-1053,Amara Diallo,27,NYC,2026-03-25,,amara.d@example.com,bronze
+C-1054,Ben Kowalski,53,Boston,2026-03-26,$903.60,ben.k@example.com,gold
+C-1055,Chidi Eze,31,Seattle,2026-03-27,74.80,chidi.e@example.com,bronze
+C-1005,Elena Ford,34,new york,2026-01-22,"1,050.00",e.ford@example.com,gold
+C-1013,Mona Haddad,27,NYC,2026-02-03,$540.00,mona.h@example.com,gold
