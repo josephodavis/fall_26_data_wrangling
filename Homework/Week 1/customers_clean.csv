@@ -1,0 +1,56 @@
+customer_id,name,first_name,last_name,age,city,signup_date,price,membership,email,email_valid
+C-1001,Ann Smith,Ann,Smith,25.0,New York,2026-01-15,1299.0,gold,ann.smith@example.com,True
+C-1002,Brian Ochoa,Brian,Ochoa,30.0,Boston,2026-01-17,45.5,silver,b.ochoa@example.com,True
+C-1003,Carla Reyes,Carla,Reyes,41.0,Chicago,2026-01-19,230.0,gold,carla.r@example.com,True
+C-1004,Devon Lee,Devon,Lee,,Boston,2026-01-21,89.99,bronze,devon.lee@example.com,True
+C-1005,Elena Ford,Elena,Ford,34.0,New York,2026-01-22,1050.0,gold,e.ford@example.com,True
+C-1006,Frank Nguyen,Frank,Nguyen,28.0,Chicago,2026-01-23,62.75,silver,,False
+C-1007,Grace Adeyemi,Grace,Adeyemi,,Seattle,2026-01-25,310.2,bronze,grace.a@example.com,True
+C-1008,Hector Diaz,Hector,Diaz,52.0,Boston,2026-01-26,75.0,silver,hector.d@example.com,True
+C-1009,Imani Brooks,Imani,Brooks,42.0,Atlanta,2026-01-28,2480.0,gold,imani.b@example.com,True
+C-1010,Jonas Weber,Jonas,Weber,39.0,Seattle,2026-01-29,18.0,bronze,jonas.w@example.com,True
+C-1011,Keisha Palmer,Keisha,Palmer,31.0,Atlanta,2026-02-01,,silver,keisha.p@example.com,True
+C-1012,Luis Marchetti,Luis,Marchetti,,Chicago,2026-02-02,144.1,bronze,luis.m@example.com,True
+C-1013,Mona Haddad,Mona,Haddad,27.0,New York,2026-02-03,540.0,gold,mona.h@example.com,True
+C-1014,Noah Kim,Noah,Kim,45.0,Boston,2026-02-05,,silver,noah.kim@example.com,True
+C-1015,Olivia Santos,Olivia,Santos,,Seattle,2026-02-06,76.4,bronze,olivia.s@example.com,True
+C-1016,Peter Owusu,Peter,Owusu,36.0,Atlanta,2026-02-07,1875.25,gold,peter.o@example.com,True
+C-1017,Quinn Baptiste,Quinn,Baptiste,22.0,Chicago,2026-02-09,33.0,bronze,,False
+C-1018,Rosa Delgado,Rosa,Delgado,58.0,New York,2026-02-10,410.0,silver,rosa.d@example.com,True
+C-1019,Samuel Achebe,Samuel,Achebe,29.0,Boston,2026-02-11,95.6,bronze,sam.a@example.com,True
+C-1020,Tara Whitfield,Tara,Whitfield,47.0,Seattle,2026-02-12,1120.0,gold,tara.w@example.com,True
+C-1021,Umar Sesay,Umar,Sesay,33.0,Atlanta,2026-02-14,58.85,silver,umar.s@example.com,True
+C-1022,Vera Lindqvist,Vera,Lindqvist,,Chicago,2026-02-15,267.3,bronze,vera.l@example.com,True
+C-1023,Wesley Tran,Wesley,Tran,40.0,New York,2026-02-16,720.0,gold,wes.tran@example.com,True
+C-1024,Xiomara Peña,Xiomara,Peña,26.0,Boston,2026-02-18,49.99,bronze,xio.p@example.com,True
+C-1025,Yusuf Bello,Yusuf,Bello,61.0,Seattle,2026-02-19,1340.75,gold,yusuf.b@example.com,True
+C-1026,Zara Mitchell,Zara,Mitchell,35.0,Atlanta,2026-02-20,210.0,silver,,False
+C-1027,Aaron Cole,Aaron,Cole,,Chicago,2026-02-22,88.2,bronze,aaron.c@example.com,True
+C-1028,Bianca Rossi,Bianca,Rossi,38.0,New York,2026-02-23,615.4,gold,bianca.r@example.com,True
+C-1029,Caleb Johnson,Caleb,Johnson,24.0,Boston,2026-02-24,27.5,bronze,caleb.j@example.com,True
+C-1030,Dalia Farouk,Dalia,Farouk,50.0,Seattle,2026-02-25,980.0,silver,dalia.f@example.com,True
+C-1031,Emeka Nwosu,Emeka,Nwosu,43.0,Atlanta,2026-02-26,132.65,bronze,emeka.n@example.com,True
+C-1032,Farah Aziz,Farah,Aziz,20.0,Chicago,2026-02-27,455.0,gold,farah.a@example.com,True
+C-1033,Gabriel Moreau,Gabriel,Moreau,37.0,New York,2026-03-01,70.1,silver,gabriel.m@example.com,True
+C-1034,Hannah Osei,Hannah,Osei,30.0,Boston,2026-03-02,,bronze,hannah.o@example.com,True
+C-1035,Ibrahim Toure,Ibrahim,Toure,55.0,Seattle,2026-03-03,1690.0,gold,ibrahim.t@example.com,True
+C-1036,Julia Kaminski,Julia,Kaminski,23.0,Atlanta,2026-03-05,41.25,bronze,julia.k@example.com,True
+C-1037,Kwame Boateng,Kwame,Boateng,46.0,Chicago,2026-03-06,525.9,silver,kwame.b@example.com,True
+C-1038,Lena Petrov,Lena,Petrov,,New York,2026-03-07,163.0,bronze,lena.p@example.com,True
+C-1039,Marcus Hill,Marcus,Hill,32.0,Boston,2026-03-09,2015.0,gold,marcus.h@example.com,True
+C-1040,Nadia Chowdhury,Nadia,Chowdhury,48.0,Seattle,2026-03-10,84.45,silver,nadia.c@example.com,True
+C-1041,Omar Haddad,Omar,Haddad,21.0,Atlanta,2026-03-11,,bronze,omar.h@example.com,True
+C-1042,Priya Raman,Priya,Raman,44.0,Chicago,2026-03-12,377.8,gold,priya.r@example.com,True
+C-1043,Quentin Dubois,Quentin,Dubois,57.0,New York,2026-03-13,66.0,silver,,False
+C-1044,Rachel Amoah,Rachel,Amoah,29.0,Boston,2026-03-15,1208.55,gold,rachel.a@example.com,True
+C-1045,Silas Berhane,Silas,Berhane,42.0,Seattle,2026-03-16,199.99,bronze,silas.b@example.com,True
+C-1046,Tamara Novak,Tamara,Novak,,Atlanta,2026-03-17,53.3,silver,tamara.n@example.com,True
+C-1047,Uche Okafor,Uche,Okafor,51.0,Chicago,2026-03-18,845.0,gold,uche.o@example.com,True
+C-1048,Valeria Cruz,Valeria,Cruz,26.0,New York,2026-03-19,112.7,bronze,valeria.c@example.com,True
+C-1049,Wanjiru Kamau,Wanjiru,Kamau,39.0,Boston,2026-03-20,690.0,silver,wanjiru.k@example.com,True
+C-1050,Xander Ellis,Xander,Ellis,60.0,Seattle,2026-03-22,38.4,bronze,xander.e@example.com,True
+C-1051,Yara Mansour,Yara,Mansour,34.0,Atlanta,2026-03-23,1455.0,gold,yara.m@example.com,True
+C-1052,Zeke Alvarez,Zeke,Alvarez,49.0,Chicago,2026-03-24,247.15,silver,zeke.a@example.com,True
+C-1053,Amara Diallo,Amara,Diallo,27.0,New York,2026-03-25,,bronze,amara.d@example.com,True
+C-1054,Ben Kowalski,Ben,Kowalski,53.0,Boston,2026-03-26,903.6,gold,ben.k@example.com,True
+C-1055,Chidi Eze,Chidi,Eze,31.0,Seattle,2026-03-27,74.8,bronze,chidi.e@example.com,True
