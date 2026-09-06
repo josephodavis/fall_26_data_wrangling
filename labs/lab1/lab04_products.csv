@@ -1,0 +1,61 @@
+sku,name,dims,contact,description
+AB-1042-XY,Blue Widget,12x8x3 in,orders@northwind.example.com,Ships flat. Weighs 2.4 lb.
+CD-2087-QR,Steel Bracket,12 x 8 x 3 in,(202) 555-0143,Weighs 3 lb; fits a 12in shelf.
+EF-3311-ZW,Cotton Tote,30.5cm x 20cm x 7.6cm,202-555-0198,Metric packaging. Weighs 1.1 kg.
+GH-4520-LM,Ceramic Mug,9x9x9in,support@acme.example.org,Cube. Weighs 0.75 lb.
+IJ-5077-TT,Oak Shelf,18 x 12 x 4 in,+1 202 555 0166,"Weighs 5.2 lb, ships in 2 boxes."
+ab-6001-yz,Brass Hinge,6x4x2 in,sales@acme.example.org,Lowercase SKU -- entry error.
+KL-7,Linen Runner,10x10x2 in,202.555.0177,Short SKU -- entry error.
+MN-8123-PQ,Copper Wire,,hello@example,No dims recorded. Bad email.
+OP-9044-RS,Glass Vase,24x18x6 in,,No contact on file. Weighs 11 lb.
+QR-1150-UV,Pine Crate,1.5 x 1.5 x 0.25 in,1-202-555-0102,Tiny. Weighs 0.05 lb.
+AB-2112-XY,Nylon Strap,12x8x3 in,orders@northwind.example.com,Ships flat. Weighs 2.4 lb.
+CD-3164-QR,Rubber Grommet,12 x 8 x 3 in,(202) 555-0143,Weighs 3 lb; fits a 12in shelf.
+EF-4395-ZW,Cedar Plank,30.5cm x 20cm x 7.6cm,202-555-0198,Metric packaging. Weighs 1.1 kg.
+GH-5611-LM,Vinyl Decal,9x9x9in,support@acme.example.org,Cube. Weighs 0.75 lb.
+IJ-6175-TT,Wool Throw,18 x 12 x 4 in,+1 202 555 0166,"Weighs 5.2 lb, ships in 2 boxes."
+ab-7106-yz,Blue Widget,6x4x2 in,sales@acme.example.org,Lowercase SKU -- entry error.
+KL-7,Steel Bracket,10x10x2 in,202.555.0177,Short SKU -- entry error.
+MN-9242-PQ,Cotton Tote,,hello@example,No dims recorded. Bad email.
+OP-1170-RS,Ceramic Mug,24x18x6 in,,No contact on file. Weighs 11 lb.
+QR-2283-UV,Oak Shelf,1.5 x 1.5 x 0.25 in,1-202-555-0102,Tiny. Weighs 0.05 lb.
+AB-2182-XY,Brass Hinge,12x8x3 in,orders@northwind.example.com,Ships flat. Weighs 2.4 lb.
+CD-3234-QR,Linen Runner,12 x 8 x 3 in,(202) 555-0143,Weighs 3 lb; fits a 12in shelf.
+EF-4465-ZW,Copper Wire,30.5cm x 20cm x 7.6cm,202-555-0198,Metric packaging. Weighs 1.1 kg.
+GH-5681-LM,Glass Vase,9x9x9in,support@acme.example.org,Cube. Weighs 0.75 lb.
+IJ-6245-TT,Pine Crate,18 x 12 x 4 in,+1 202 555 0166,"Weighs 5.2 lb, ships in 2 boxes."
+ab-7176-yz,Nylon Strap,6x4x2 in,sales@acme.example.org,Lowercase SKU -- entry error.
+KL-7,Rubber Grommet,10x10x2 in,202.555.0177,Short SKU -- entry error.
+MN-9312-PQ,Cedar Plank,,hello@example,No dims recorded. Bad email.
+OP-1240-RS,Vinyl Decal,24x18x6 in,,No contact on file. Weighs 11 lb.
+QR-2353-UV,Wool Throw,1.5 x 1.5 x 0.25 in,1-202-555-0102,Tiny. Weighs 0.05 lb.
+AB-2252-XY,Blue Widget,12x8x3 in,orders@northwind.example.com,Ships flat. Weighs 2.4 lb.
+CD-3304-QR,Steel Bracket,12 x 8 x 3 in,(202) 555-0143,Weighs 3 lb; fits a 12in shelf.
+EF-4535-ZW,Cotton Tote,30.5cm x 20cm x 7.6cm,202-555-0198,Metric packaging. Weighs 1.1 kg.
+GH-5751-LM,Ceramic Mug,9x9x9in,support@acme.example.org,Cube. Weighs 0.75 lb.
+IJ-6315-TT,Oak Shelf,18 x 12 x 4 in,+1 202 555 0166,"Weighs 5.2 lb, ships in 2 boxes."
+ab-7246-yz,Brass Hinge,6x4x2 in,sales@acme.example.org,Lowercase SKU -- entry error.
+KL-7,Linen Runner,10x10x2 in,202.555.0177,Short SKU -- entry error.
+MN-9382-PQ,Copper Wire,,hello@example,No dims recorded. Bad email.
+OP-1310-RS,Glass Vase,24x18x6 in,,No contact on file. Weighs 11 lb.
+QR-2423-UV,Pine Crate,1.5 x 1.5 x 0.25 in,1-202-555-0102,Tiny. Weighs 0.05 lb.
+AB-2322-XY,Nylon Strap,12x8x3 in,orders@northwind.example.com,Ships flat. Weighs 2.4 lb.
+CD-3374-QR,Rubber Grommet,12 x 8 x 3 in,(202) 555-0143,Weighs 3 lb; fits a 12in shelf.
+EF-4605-ZW,Cedar Plank,30.5cm x 20cm x 7.6cm,202-555-0198,Metric packaging. Weighs 1.1 kg.
+GH-5821-LM,Vinyl Decal,9x9x9in,support@acme.example.org,Cube. Weighs 0.75 lb.
+IJ-6385-TT,Wool Throw,18 x 12 x 4 in,+1 202 555 0166,"Weighs 5.2 lb, ships in 2 boxes."
+ab-7316-yz,Blue Widget,6x4x2 in,sales@acme.example.org,Lowercase SKU -- entry error.
+KL-7,Steel Bracket,10x10x2 in,202.555.0177,Short SKU -- entry error.
+MN-9452-PQ,Cotton Tote,,hello@example,No dims recorded. Bad email.
+OP-1380-RS,Ceramic Mug,24x18x6 in,,No contact on file. Weighs 11 lb.
+QR-2493-UV,Oak Shelf,1.5 x 1.5 x 0.25 in,1-202-555-0102,Tiny. Weighs 0.05 lb.
+AB-2392-XY,Brass Hinge,12x8x3 in,orders@northwind.example.com,Ships flat. Weighs 2.4 lb.
+CD-3444-QR,Linen Runner,12 x 8 x 3 in,(202) 555-0143,Weighs 3 lb; fits a 12in shelf.
+EF-4675-ZW,Copper Wire,30.5cm x 20cm x 7.6cm,202-555-0198,Metric packaging. Weighs 1.1 kg.
+GH-5891-LM,Glass Vase,9x9x9in,support@acme.example.org,Cube. Weighs 0.75 lb.
+IJ-6455-TT,Pine Crate,18 x 12 x 4 in,+1 202 555 0166,"Weighs 5.2 lb, ships in 2 boxes."
+ab-7386-yz,Nylon Strap,6x4x2 in,sales@acme.example.org,Lowercase SKU -- entry error.
+KL-7,Rubber Grommet,10x10x2 in,202.555.0177,Short SKU -- entry error.
+MN-9522-PQ,Cedar Plank,,hello@example,No dims recorded. Bad email.
+OP-1450-RS,Vinyl Decal,24x18x6 in,,No contact on file. Weighs 11 lb.
+QR-2563-UV,Wool Throw,1.5 x 1.5 x 0.25 in,1-202-555-0102,Tiny. Weighs 0.05 lb.
