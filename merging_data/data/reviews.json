@@ -1,0 +1,50 @@
+[
+  {
+    "reviewId": 101,
+    "truckId": "T-07",
+    "stars": 5,
+    "note": "Jollof worth the line"
+  },
+  {
+    "reviewId": 102,
+    "truckId": "T-03",
+    "stars": 4,
+    "note": "Extra mambo sauce"
+  },
+  {
+    "reviewId": 103,
+    "truckId": "T-07",
+    "stars": 5,
+    "note": "Plantain still hot"
+  },
+  {
+    "reviewId": 104,
+    "truckId": "T-12",
+    "stars": 5,
+    "note": "Best gyro on campus"
+  },
+  {
+    "reviewId": 105,
+    "truckId": "T-15",
+    "stars": 3,
+    "note": "Pie was cold"
+  },
+  {
+    "reviewId": 106,
+    "truckId": "T-03",
+    "stars": 5,
+    "note": "Fast at lunch rush"
+  },
+  {
+    "reviewId": 107,
+    "truckId": "T-12",
+    "stars": 3,
+    "note": "Long wait at noon"
+  },
+  {
+    "reviewId": 108,
+    "truckId": "T-99",
+    "stars": 1,
+    "note": "Truck never showed"
+  }
+]

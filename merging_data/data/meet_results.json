@@ -1,0 +1,68 @@
+{
+  "meet_name": "Bison Invitational",
+  "venue": "Greene Stadium",
+  "athletes": [
+    {
+      "athlete_id": 41,
+      "marks": [
+        {
+          "event": "100m",
+          "mark": 11.62,
+          "unit": "s",
+          "place": 2
+        },
+        {
+          "event": "200m",
+          "mark": 23.98,
+          "unit": "s",
+          "place": 1
+        }
+      ]
+    },
+    {
+      "athlete_id": 52,
+      "marks": [
+        {
+          "event": "Long Jump",
+          "mark": 7.41,
+          "unit": "m",
+          "place": 1
+        },
+        {
+          "event": "Triple Jump",
+          "mark": 15.02,
+          "unit": "m",
+          "place": 3
+        }
+      ]
+    },
+    {
+      "athlete_id": 63,
+      "marks": [
+        {
+          "event": "100m",
+          "mark": 12.05,
+          "unit": "s",
+          "place": 5
+        }
+      ]
+    },
+    {
+      "athlete_id": 74,
+      "marks": [
+        {
+          "event": "Shot Put",
+          "mark": 17.83,
+          "unit": "m",
+          "place": 2
+        },
+        {
+          "event": "Discus",
+          "mark": 54.1,
+          "unit": "m",
+          "place": 1
+        }
+      ]
+    }
+  ]
+}
