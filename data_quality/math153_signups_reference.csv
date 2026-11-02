@@ -1,0 +1,601 @@
+student_id,name,email,phone,date_of_birth,enrollment_date,major,credits_completed,gpa,state,zip_code,section,status,last_login
+900000,Kwame Udoh,kwame.udoh@howard.edu,2025558975,2009-08-20,2025-05-08,Economics,79,2.05,MD,20742,C,Active,2026-10-15
+900001,Simone Nguyen,simone.nguyen@howard.edu,2025556043,2007-04-11,2025-01-13,Biology,90,2.85,NC,27707,C,Active,2026-10-11
+900002,Daniel Ibrahim,daniel.ibrahim@howard.edu,2025551999,2009-11-13,2025-07-28,Engineering,18,2.56,MD,20742,B,Active,2026-10-26
+900003,Elias Price,elias.price@howard.edu,2025558145,2009-06-28,2025-02-19,Psychology,62,2.03,NY,10027,C,Active,2026-10-20
+900004,Leila Yusuf,leila.yusuf@howard.edu,2025553257,2004-02-27,2024-10-05,Undeclared,69,3.16,DC,20059,C,Active,2026-10-24
+900005,Zola Hayes,zola.hayes@howard.edu,2025553222,2005-10-17,2024-10-27,Psychology,52,2.71,IL,60637,C,Active,2026-10-20
+900006,Hana Udoh,hana.udoh@howard.edu,2025552840,2009-02-22,2025-06-21,Computer Science,51,3.73,NY,10027,C,Active,2026-10-21
+900007,Rashid Mensah,rashid.mensah@howard.edu,2025552899,2007-11-10,2024-11-16,Undeclared,99,3.13,GA,30314,B,Active,2026-10-12
+900008,Fatima Patel,fatima.patel@howard.edu,2025552172,2005-03-25,2025-07-02,Economics,37,2.19,GA,30314,C,Active,2026-10-16
+900009,Amara Thompson,amara.thompson@howard.edu,2025550622,2005-05-18,2024-10-06,Nursing,99,2.21,PA,19104,B,Active,2026-10-20
+900010,Rosa Ahmed,rosa.ahmed@howard.edu,2025553234,2007-05-01,2025-09-16,Nursing,115,4.0,CA,90095,C,Active,2026-10-21
+900011,Yara Owens,yara.owens@howard.edu,2025554322,2006-11-10,2025-09-25,Economics,2,2.84,VA,22030,A,Active,2026-10-05
+900012,Rosa Jackson,rosa.jackson@howard.edu,2025556139,2008-06-22,2025-08-16,Economics,106,2.77,TX,77004,C,Active,2026-09-18
+900013,Leila Ibrahim,leila.ibrahim@howard.edu,2025556443,2005-02-16,2024-08-28,Economics,74,2.89,PA,19104,C,Active,2026-10-22
+900014,Lamar Grant,lamar.grant@howard.edu,2025558804,2004-02-08,2025-06-25,Engineering,103,3.08,NC,27707,B,Active,2026-09-23
+900015,Yara Silva,yara.silva@howard.edu,2025554047,2007-05-19,2025-07-16,Nursing,116,2.25,MD,20742,B,Active,2026-10-27
+900016,Keisha Price,keisha.price@howard.edu,2025559282,2007-11-28,2025-09-11,Engineering,48,3.09,TX,77004,C,Active,2026-10-06
+900017,Maya Price,maya.price@howard.edu,2025556549,2009-07-19,2025-08-01,Economics,45,2.83,PA,19104,B,Active,2026-10-22
+900018,Hana Grant,hana.grant@howard.edu,2025555406,2008-02-22,2024-09-28,Economics,98,3.2,PA,19104,C,Active,2026-10-27
+900019,Tariq Udoh,tariq.udoh@howard.edu,2025557875,2009-05-18,2024-12-27,Nursing,4,2.77,NC,27707,B,Active,2026-10-19
+900020,Hana Udoh,hana.udoh@howard.edu,2025552856,2009-06-26,2025-01-28,Nursing,9,4.0,TX,77004,A,Active,2026-10-25
+900021,Paloma Udoh,paloma.udoh@howard.edu,2025552358,2008-01-29,2025-07-18,Economics,77,1.49,CA,90095,A,Active,2026-10-10
+900022,Amara Thompson,amara.thompson@howard.edu,2025555316,2006-06-23,2025-05-09,Computer Science,87,2.94,TX,77004,B,Active,2026-10-16
+900023,Zola Yusuf,zola.yusuf@howard.edu,2025559938,2008-01-27,2025-08-14,Psychology,94,1.71,NY,10027,C,Active,2026-10-10
+900024,Tariq Walker,tariq.walker@howard.edu,2025551760,2004-02-09,2025-04-20,Undeclared,107,1.98,PA,19104,B,Active,2026-09-12
+900025,Daniel Nguyen,daniel.nguyen@howard.edu,2025557486,2009-12-01,2025-04-07,Computer Science,102,2.51,IL,60637,B,Active,2026-10-07
+900026,Quincy Yusuf,quincy.yusuf@howard.edu,2025557184,2006-09-20,2025-03-11,Nursing,5,2.21,NY,10027,B,Active,2026-10-26
+900027,Gabriel Vargas,gabriel.vargas@howard.edu,2025556814,2006-06-07,2025-06-15,Biology,51,3.3,MD,20742,B,Active,2026-09-24
+900028,Keisha Yusuf,keisha.yusuf@howard.edu,2025551492,2009-10-12,2025-07-07,Economics,83,3.12,DC,20059,C,Active,2026-10-26
+900029,Yara Castillo,yara.castillo@howard.edu,2025555522,2005-01-01,2025-04-01,Biology,30,3.14,IL,60637,A,Active,2026-10-16
+900030,Imani Ibrahim,imani.ibrahim@howard.edu,2025559687,2009-08-01,2025-07-07,Nursing,120,2.39,CA,90095,C,Active,2026-10-02
+900031,Elias Price,elias.price@howard.edu,2025554129,2009-05-12,2024-10-15,Biology,78,2.64,MD,20742,A,Active,2026-10-26
+900032,Simone Moore,simone.moore@howard.edu,2025556608,2005-11-19,2024-10-10,Mathematics,27,3.41,IL,60637,A,Active,2026-10-26
+900033,Paloma Xu,paloma.xu@howard.edu,2025559775,2005-05-27,2025-04-03,Undeclared,7,2.26,CA,90095,C,Active,2026-10-06
+900034,Fatima Diallo,fatima.diallo@howard.edu,2025557747,2008-03-27,2025-02-17,Computer Science,27,3.3,DC,20059,A,Active,2026-10-03
+900035,Ibrahim Xu,ibrahim.xu@howard.edu,2025552041,2005-02-11,2025-07-14,Economics,110,2.21,MD,20742,C,Active,2026-10-25
+900036,Ibrahim Nguyen,ibrahim.nguyen@howard.edu,2025552320,2006-11-13,2025-08-18,Economics,13,2.75,PA,19104,B,Active,2026-10-18
+900037,Zola Silva,zola.silva@howard.edu,2025554269,2004-05-19,2025-05-30,Psychology,58,2.73,IL,60637,C,Active,2026-09-26
+900038,Yara Hayes,yara.hayes@howard.edu,2025555836,2005-03-12,2025-02-25,Undeclared,41,2.48,CA,90095,C,Active,2026-10-20
+900039,Rosa Nkemdirim,rosa.nkemdirim@howard.edu,2025551909,2009-02-11,2024-10-10,Mathematics,16,3.4,IL,60637,B,Active,2026-10-14
+900040,Rosa Castillo,rosa.castillo@howard.edu,2025557831,2005-11-06,2025-06-25,Mathematics,58,3.5,CA,90095,A,Active,2026-10-23
+900041,Paloma Johnson,paloma.johnson@howard.edu,2025554974,2008-02-12,2025-06-10,Psychology,28,3.09,MD,20742,C,Active,2026-10-13
+900042,Hana Dubois,hana.dubois@howard.edu,2025554522,2007-03-21,2025-10-01,Mathematics,44,3.18,PA,19104,C,Active,2026-10-16
+900043,Ibrahim Patel,ibrahim.patel@howard.edu,2025558174,2004-02-16,2024-09-03,Economics,80,3.08,TX,77004,A,Active,2026-10-20
+900044,Fatima Nkemdirim,fatima.nkemdirim@howard.edu,2025550647,2004-11-27,2025-07-10,Engineering,119,2.62,DC,20059,B,Active,2026-10-01
+900045,Leila Moore,leila.moore@howard.edu,2025557145,2006-03-25,2025-08-13,Psychology,39,2.95,IL,60637,A,Active,2026-10-11
+900046,Caleb Mensah,caleb.mensah@howard.edu,2025554491,2006-06-22,2025-08-23,Psychology,52,2.36,NY,10027,C,Active,2026-10-23
+900047,Leila Rivera,leila.rivera@howard.edu,2025554641,2007-08-26,2025-10-07,Nursing,33,2.62,IL,60637,A,Active,2026-10-17
+900048,Quincy Johnson,quincy.johnson@howard.edu,2025559721,2004-06-24,2025-07-05,Biology,2,2.01,TX,77004,A,Active,2026-10-25
+900049,Kwame Thompson,kwame.thompson@howard.edu,2025553936,2008-06-29,2024-12-19,Computer Science,0,3.11,TX,77004,A,Active,2026-10-14
+900050,Daniel Brooks,daniel.brooks@howard.edu,2025559888,2005-01-18,2025-09-23,Undeclared,2,3.59,VA,22030,B,Active,2026-10-01
+900051,Hana Ahmed,hana.ahmed@howard.edu,2025555145,2007-04-11,2025-04-26,Engineering,105,2.72,DC,20059,B,Active,2026-10-14
+900052,Marcus Walker,marcus.walker@howard.edu,2025552848,2006-12-23,2024-12-11,Engineering,66,3.22,CA,90095,A,Active,2026-10-03
+900053,Ibrahim Ahmed,ibrahim.ahmed@howard.edu,2025558781,2009-11-03,2025-06-16,Undeclared,38,3.15,PA,19104,A,Active,2026-10-20
+900054,Paloma Diallo,paloma.diallo@howard.edu,2025550997,2008-07-07,2025-07-06,Biology,24,2.45,MD,20742,A,Active,2026-10-24
+900055,Zola Patel,zola.patel@howard.edu,2025554424,2009-06-07,2024-09-24,Computer Science,15,3.53,NC,27707,C,Active,2026-09-19
+900056,Tariq Ibrahim,tariq.ibrahim@howard.edu,2025558359,2005-04-27,2024-10-01,Biology,83,2.95,GA,30314,C,Active,2026-10-18
+900057,Nadia Zhang,nadia.zhang@howard.edu,2025552807,2009-12-20,2025-04-13,Engineering,37,2.83,NC,27707,A,Active,2026-10-09
+900058,Rosa Jackson,rosa.jackson@howard.edu,2025550346,2009-03-27,2024-10-03,Economics,92,3.44,NY,10027,B,Active,2026-10-21
+900059,Priya Thompson,priya.thompson@howard.edu,2025555134,2008-06-24,2025-10-17,Psychology,112,2.96,IL,60637,A,Active,2026-10-15
+900060,Marcus Lopez,marcus.lopez@howard.edu,2025558155,2006-01-10,2024-09-05,Undeclared,73,2.51,IL,60637,B,Active,2026-09-30
+900061,Marcus Zhang,marcus.zhang@howard.edu,2025554365,2009-10-16,2024-10-31,Engineering,124,3.12,DC,20059,C,Active,2026-10-13
+900062,Rashid Yusuf,rashid.yusuf@howard.edu,2025550579,2008-06-02,2025-03-31,Nursing,8,2.23,VA,22030,A,Active,2026-10-22
+900063,Quincy Hayes,quincy.hayes@howard.edu,2025552803,2005-06-04,2025-07-11,Nursing,78,3.22,IL,60637,A,Active,2026-10-06
+900064,Daniel Moore,daniel.moore@howard.edu,2025557509,2008-10-27,2025-02-19,Psychology,94,2.96,PA,19104,B,Active,2026-10-21
+900065,Maya Ibrahim,maya.ibrahim@howard.edu,2025555527,2008-09-20,2024-09-21,Computer Science,14,1.71,DC,20059,A,Active,2026-10-04
+900066,Oscar Mensah,oscar.mensah@howard.edu,2025551240,2004-09-28,2025-05-27,Mathematics,74,2.62,PA,19104,B,Active,2026-10-18
+900067,Hana Brooks,hana.brooks@howard.edu,2025552256,2004-07-04,2025-08-29,Nursing,66,3.67,CA,90095,B,Active,2026-09-22
+900068,Fatima Hayes,fatima.hayes@howard.edu,2025551336,2005-05-09,2025-07-16,Economics,9,1.63,GA,30314,A,Active,2026-10-17
+900069,Ibrahim Silva,ibrahim.silva@howard.edu,2025553086,2004-07-06,2025-10-19,Nursing,120,3.16,CA,90095,B,Active,2026-09-04
+900070,Quincy Price,quincy.price@howard.edu,2025559060,2004-02-22,2024-11-21,Psychology,43,4.0,PA,19104,C,Active,2026-09-16
+900071,Simone Zhang,simone.zhang@howard.edu,2025558670,2007-10-20,2025-03-17,Mathematics,47,2.36,CA,90095,C,Active,2026-10-01
+900072,Quincy Price,quincy.price@howard.edu,2025557257,2006-03-27,2025-03-15,Mathematics,17,3.66,GA,30314,A,Active,2026-10-25
+900073,Marcus Price,marcus.price@howard.edu,2025554596,2006-05-25,2025-09-01,Economics,57,3.48,PA,19104,A,Active,2026-10-15
+900074,Maya Silva,maya.silva@howard.edu,2025554433,2008-02-25,2024-10-27,Undeclared,14,3.08,PA,19104,B,Active,2026-09-26
+900075,Elias Ahmed,elias.ahmed@howard.edu,2025551200,2007-04-02,2025-08-10,Nursing,36,3.78,IL,60637,B,Active,2026-09-26
+900076,Yara Owens,yara.owens@howard.edu,2025551220,2007-10-21,2025-05-23,Nursing,78,3.25,NY,10027,C,Active,2026-10-22
+900077,Simone Yusuf,simone.yusuf@howard.edu,2025550789,2006-01-01,2025-08-13,Economics,66,1.69,VA,22030,B,Active,2026-10-17
+900078,Caleb Vargas,caleb.vargas@howard.edu,2025558162,2007-08-24,2024-12-16,Psychology,106,2.98,TX,77004,C,Active,2026-10-12
+900079,Nadia Johnson,nadia.johnson@howard.edu,2025556669,2006-10-05,2025-04-05,Biology,65,3.59,TX,77004,B,Active,2026-10-26
+900080,Danai Patel,danai.patel@howard.edu,2025553706,2004-04-18,2025-05-02,Mathematics,49,3.53,DC,20059,C,Active,2026-10-22
+900081,Quincy Nguyen,quincy.nguyen@howard.edu,2025552525,2008-06-10,2025-07-15,Undeclared,57,2.92,TX,77004,B,Active,2026-10-09
+900082,Quincy Walker,quincy.walker@howard.edu,2025557356,2004-07-11,2024-10-19,Engineering,124,2.06,CA,90095,B,Active,2026-09-29
+900083,Omar Price,omar.price@howard.edu,2025557800,2008-12-02,2025-02-06,Undeclared,12,2.74,GA,30314,B,Active,2026-10-13
+900084,Fatima Mensah,fatima.mensah@howard.edu,2025551834,2004-08-02,2025-01-29,Mathematics,95,3.34,GA,30314,C,Active,2026-10-18
+900085,Marcus Vargas,marcus.vargas@howard.edu,2025552109,2007-12-03,2025-07-07,Engineering,14,2.1,TX,77004,B,Active,2026-10-15
+900086,Fatima Diallo,fatima.diallo@howard.edu,2025557713,2005-02-11,2025-06-05,Psychology,79,3.16,PA,19104,A,Active,2026-10-16
+900087,Hana Vargas,hana.vargas@howard.edu,2025554129,2008-01-08,2024-09-06,Economics,99,4.0,GA,30314,C,Active,2026-09-19
+900088,Daniel Silva,daniel.silva@howard.edu,2025556380,2009-06-21,2025-08-08,Computer Science,21,3.23,IL,60637,B,Active,2026-10-25
+900089,Rosa Johnson,rosa.johnson@howard.edu,2025553216,2006-11-18,2024-12-15,Computer Science,56,2.8,TX,77004,C,Active,2026-10-25
+900090,Rashid Zhang,rashid.zhang@howard.edu,2025558044,2009-10-03,2025-04-06,Economics,4,2.74,TX,77004,A,Active,2026-10-17
+900091,Paloma Price,paloma.price@howard.edu,2025558741,2009-08-07,2024-09-29,Economics,99,1.93,VA,22030,B,Active,2026-10-10
+900092,Imani Mensah,imani.mensah@howard.edu,2025555340,2004-07-23,2025-08-09,Engineering,14,3.0,CA,90095,B,Active,2026-10-25
+900093,Ibrahim Castillo,ibrahim.castillo@howard.edu,2025553393,2005-02-12,2024-10-20,Engineering,114,3.15,GA,30314,C,Active,2026-10-18
+900094,Rashid Mensah,rashid.mensah@howard.edu,2025552505,2005-05-16,2025-01-08,Computer Science,40,3.78,NY,10027,A,Active,2026-10-16
+900095,Kwame Kim,kwame.kim@howard.edu,2025555359,2004-12-03,2025-09-21,Engineering,62,2.71,MD,20742,C,Active,2026-10-04
+900096,Ibrahim Nguyen,ibrahim.nguyen@howard.edu,2025559695,2007-09-15,2025-04-26,Economics,105,3.62,DC,20059,B,Active,2026-10-23
+900097,Rashid Jackson,rashid.jackson@howard.edu,2025550525,2004-09-13,2025-05-14,Nursing,112,3.07,DC,20059,C,Active,2026-09-16
+900098,Omar Walker,omar.walker@howard.edu,2025557245,2007-09-11,2025-02-28,Mathematics,14,3.06,VA,22030,A,Active,2026-10-27
+900099,Oscar Diallo,oscar.diallo@howard.edu,2025551443,2007-03-07,2025-06-03,Psychology,18,2.58,DC,20059,B,Active,2026-10-21
+900100,Priya Freeman,priya.freeman@howard.edu,2025555890,2008-04-04,2025-07-07,Engineering,86,2.73,TX,77004,C,Active,2026-10-03
+900101,Rosa Patel,rosa.patel@howard.edu,2025555626,2007-04-01,2025-02-23,Economics,19,1.89,GA,30314,B,Active,2026-09-22
+900102,Quincy Owens,quincy.owens@howard.edu,2025556207,2004-04-21,2025-05-16,Engineering,94,2.81,TX,77004,C,Active,2026-10-23
+900103,Leila Xu,leila.xu@howard.edu,2025559834,2007-09-13,2024-10-03,Mathematics,30,2.61,NC,27707,A,Active,2026-10-10
+900104,Zola Nkemdirim,zola.nkemdirim@howard.edu,2025551232,2004-05-31,2024-11-08,Undeclared,93,3.68,NY,10027,A,Active,2026-10-21
+900105,Elias Freeman,elias.freeman@howard.edu,2025555580,2006-03-14,2025-08-21,Biology,79,2.95,VA,22030,B,Active,2026-10-18
+900106,Jolene Moore,jolene.moore@howard.edu,2025550520,2007-07-24,2025-08-15,Engineering,32,3.03,IL,60637,B,Active,2026-10-07
+900107,Rosa Yusuf,rosa.yusuf@howard.edu,2025558959,2004-11-09,2024-12-01,Economics,39,2.57,TX,77004,C,Active,2026-10-22
+900108,Rosa Xu,rosa.xu@howard.edu,2025555373,2007-01-02,2024-09-26,Undeclared,99,3.07,IL,60637,A,Active,2026-10-27
+900109,Elias Walker,elias.walker@howard.edu,2025553705,2004-03-20,2025-04-24,Engineering,50,2.05,MD,20742,B,Active,2026-10-18
+900110,Amara Thompson,amara.thompson@howard.edu,2025550239,2005-11-13,2025-08-03,Psychology,68,2.21,DC,20059,B,Active,2026-10-25
+900111,Imani Grant,imani.grant@howard.edu,2025557637,2008-10-09,2025-05-11,Engineering,94,2.85,TX,77004,C,Active,2026-10-14
+900112,Kwame Patel,kwame.patel@howard.edu,2025556647,2005-08-02,2025-04-12,Nursing,70,3.2,PA,19104,A,Active,2026-10-20
+900113,Caleb Silva,caleb.silva@howard.edu,2025556713,2006-09-24,2025-10-07,Mathematics,23,3.26,PA,19104,A,Active,2026-10-07
+900114,Ibrahim Brooks,ibrahim.brooks@howard.edu,2025557846,2008-09-13,2025-04-16,Economics,101,2.73,DC,20059,C,Active,2026-10-21
+900115,Tariq Zhang,tariq.zhang@howard.edu,2025551940,2006-12-14,2025-10-22,Computer Science,53,2.59,NC,27707,C,Active,2026-10-06
+900116,Marcus Nguyen,marcus.nguyen@howard.edu,2025558043,2005-08-24,2025-04-06,Biology,22,2.71,NC,27707,B,Active,2026-10-27
+900117,Quincy Udoh,quincy.udoh@howard.edu,2025552451,2007-08-14,2024-12-29,Engineering,93,2.17,PA,19104,A,Active,2026-10-21
+900118,Priya Patel,priya.patel@howard.edu,2025553077,2005-10-18,2025-08-06,Psychology,40,3.06,MD,20742,B,Active,2026-10-10
+900119,Nadia Johnson,nadia.johnson@howard.edu,2025559378,2006-11-08,2025-03-29,Biology,74,3.3,TX,77004,A,Active,2026-10-24
+900120,Rosa Mensah,rosa.mensah@howard.edu,2025554847,2004-02-21,2025-04-03,Nursing,31,2.53,CA,90095,C,Active,2026-10-15
+900121,Yara Kim,yara.kim@howard.edu,2025555533,2005-01-23,2025-09-07,Nursing,15,3.62,NC,27707,C,Active,2026-10-04
+900122,Noor Castillo,noor.castillo@howard.edu,2025554159,2008-06-13,2025-06-28,Economics,75,2.81,GA,30314,A,Active,2026-10-12
+900123,Elias Rivera,elias.rivera@howard.edu,2025557428,2005-09-16,2025-03-03,Economics,120,3.08,NY,10027,C,Active,2026-10-08
+900124,Elias Vargas,elias.vargas@howard.edu,2025554561,2007-02-12,2025-04-20,Engineering,63,2.08,CA,90095,C,Active,2026-10-15
+900125,Gabriel Thompson,gabriel.thompson@howard.edu,2025551969,2006-06-28,2025-08-26,Economics,33,1.97,DC,20059,A,Active,2026-10-06
+900126,Noor Nguyen,noor.nguyen@howard.edu,2025553242,2009-11-30,2025-03-24,Psychology,40,2.34,CA,90095,A,Active,2026-09-27
+900127,Lamar Thompson,lamar.thompson@howard.edu,2025559976,2008-05-29,2025-09-27,Biology,4,3.11,VA,22030,A,Active,2026-10-19
+900128,Rashid Diallo,rashid.diallo@howard.edu,2025554117,2005-04-15,2025-01-20,Nursing,42,3.31,CA,90095,A,Active,2026-10-24
+900129,Omar Hayes,omar.hayes@howard.edu,2025554979,2009-07-02,2025-07-27,Computer Science,59,3.52,NC,27707,A,Active,2026-10-04
+900130,Oscar Mensah,oscar.mensah@howard.edu,2025558749,2007-10-20,2025-05-29,Nursing,113,3.19,NY,10027,A,Active,2026-10-17
+900131,Paloma Johnson,paloma.johnson@howard.edu,2025557900,2005-11-03,2024-10-31,Biology,4,3.26,IL,60637,C,Active,2026-10-25
+900132,Jolene Ahmed,jolene.ahmed@howard.edu,2025553183,2009-01-21,2024-10-21,Psychology,111,3.17,TX,77004,C,Active,2026-10-09
+900133,Elias Kim,elias.kim@howard.edu,2025556860,2004-11-25,2024-11-26,Computer Science,5,2.95,GA,30314,B,Active,2026-10-20
+900134,Danai Johnson,danai.johnson@howard.edu,2025554429,2005-08-31,2025-05-24,Biology,94,3.22,TX,77004,B,Active,2026-10-22
+900135,Danai Nkemdirim,danai.nkemdirim@howard.edu,2025554792,2006-12-11,2024-08-29,Biology,4,3.64,DC,20059,B,Active,2026-09-21
+900136,Gabriel Lopez,gabriel.lopez@howard.edu,2025552380,2004-05-30,2025-10-09,Psychology,73,2.78,MD,20742,B,Active,2026-10-10
+900137,Rosa Grant,rosa.grant@howard.edu,2025550922,2008-12-06,2024-11-20,Nursing,37,3.46,IL,60637,C,Active,2026-09-27
+900138,Imani Diallo,imani.diallo@howard.edu,2025559316,2009-04-27,2025-08-09,Undeclared,60,2.46,GA,30314,A,Active,2026-10-23
+900139,Tariq Owens,tariq.owens@howard.edu,2025550755,2006-07-18,2025-01-24,Computer Science,90,3.14,NY,10027,A,Active,2026-10-11
+900140,Paloma Zhang,paloma.zhang@howard.edu,2025553143,2004-04-01,2024-09-22,Nursing,120,3.36,VA,22030,A,Active,2026-10-06
+900141,Kwame Diallo,kwame.diallo@howard.edu,2025555570,2004-12-11,2025-07-08,Biology,76,2.75,MD,20742,B,Active,2026-10-23
+900142,Marcus Osei,marcus.osei@howard.edu,2025557379,2006-02-25,2024-09-01,Economics,42,2.98,VA,22030,A,Active,2026-10-21
+900143,Danai Walker,danai.walker@howard.edu,2025557932,2008-02-12,2025-03-28,Nursing,94,2.17,PA,19104,B,Active,2026-10-27
+900144,Amara Ibrahim,amara.ibrahim@howard.edu,2025553325,2009-04-01,2025-02-01,Biology,49,3.4,NC,27707,A,Active,2026-09-18
+900145,Priya Grant,priya.grant@howard.edu,2025555130,2008-04-09,2024-11-27,Engineering,30,1.67,NC,27707,B,Active,2026-10-10
+900146,Rosa Dubois,rosa.dubois@howard.edu,2025552351,2004-03-05,2025-05-24,Computer Science,105,4.0,DC,20059,C,Active,2026-10-05
+900147,Rosa Rivera,rosa.rivera@howard.edu,2025550952,2005-03-13,2025-09-16,Mathematics,74,3.35,PA,19104,B,Active,2026-10-21
+900148,Keisha Jackson,keisha.jackson@howard.edu,2025552548,2005-02-02,2024-10-15,Nursing,12,3.47,TX,77004,C,Active,2026-10-02
+900149,Daniel Udoh,daniel.udoh@howard.edu,2025551203,2006-10-08,2024-12-25,Psychology,13,2.83,TX,77004,B,Active,2026-10-18
+900150,Danai Osei,danai.osei@howard.edu,2025555207,2009-04-07,2025-07-16,Psychology,12,2.28,GA,30314,A,Active,2026-10-21
+900151,Omar Thompson,omar.thompson@howard.edu,2025552051,2004-09-01,2025-03-28,Computer Science,35,2.36,DC,20059,B,Active,2026-10-21
+900152,Jolene Nkemdirim,jolene.nkemdirim@howard.edu,2025550404,2006-09-23,2025-04-18,Mathematics,31,2.94,MD,20742,A,Active,2026-10-13
+900153,Maya Brooks,maya.brooks@howard.edu,2025554833,2005-07-19,2025-04-30,Computer Science,60,2.86,TX,77004,B,Active,2026-10-04
+900154,Rosa Diallo,rosa.diallo@howard.edu,2025555976,2007-07-27,2025-08-02,Undeclared,100,3.32,PA,19104,C,Active,2026-10-16
+900155,Amara Udoh,amara.udoh@howard.edu,2025553192,2006-11-10,2025-06-17,Mathematics,24,3.89,NY,10027,A,Active,2026-10-22
+900156,Tariq Walker,tariq.walker@howard.edu,2025556427,2006-11-20,2025-01-22,Psychology,13,3.74,IL,60637,C,Active,2026-10-25
+900157,Kwame Ahmed,kwame.ahmed@howard.edu,2025556948,2007-03-07,2025-08-01,Psychology,103,3.5,DC,20059,C,Active,2026-10-05
+900158,Marcus Freeman,marcus.freeman@howard.edu,2025551158,2009-03-20,2024-11-08,Psychology,80,4.0,MD,20742,A,Active,2026-09-19
+900159,Noor Castillo,noor.castillo@howard.edu,2025554918,2004-07-29,2025-08-16,Computer Science,43,1.3,DC,20059,A,Active,2026-10-10
+900160,Priya Freeman,priya.freeman@howard.edu,2025556288,2008-10-03,2025-07-13,Nursing,47,2.43,NY,10027,B,Active,2026-10-10
+900161,Lamar Freeman,lamar.freeman@howard.edu,2025551851,2009-09-22,2025-03-28,Biology,10,3.51,MD,20742,A,Active,2026-10-08
+900162,Tariq Osei,tariq.osei@howard.edu,2025550014,2004-12-13,2024-09-21,Nursing,104,2.48,CA,90095,C,Active,2026-10-22
+900163,Keisha Patel,keisha.patel@howard.edu,2025553685,2007-08-16,2024-10-18,Nursing,41,2.62,DC,20059,B,Active,2026-10-25
+900164,Yara Nkemdirim,yara.nkemdirim@howard.edu,2025551925,2004-06-12,2025-06-19,Economics,91,3.35,NC,27707,C,Active,2026-09-30
+900165,Paloma Diallo,paloma.diallo@howard.edu,2025551137,2006-05-19,2025-01-09,Biology,122,1.69,PA,19104,B,Active,2026-10-14
+900166,Priya Ibrahim,priya.ibrahim@howard.edu,2025551526,2009-05-28,2025-07-26,Mathematics,16,2.89,MD,20742,B,Active,2026-10-25
+900167,Kwame Kim,kwame.kim@howard.edu,2025555648,2008-11-30,2024-08-30,Psychology,80,3.17,DC,20059,C,Active,2026-10-07
+900168,Zola Vargas,zola.vargas@howard.edu,2025552029,2008-02-20,2025-03-23,Psychology,48,2.45,IL,60637,A,Active,2026-10-06
+900169,Tariq Price,tariq.price@howard.edu,2025558819,2007-11-22,2025-09-02,Engineering,123,2.54,PA,19104,A,Active,2026-10-22
+900170,Amara Diallo,amara.diallo@howard.edu,2025554351,2007-12-17,2025-08-11,Nursing,109,3.72,VA,22030,C,Active,2026-10-04
+900171,Danai Kim,danai.kim@howard.edu,2025554354,2005-10-26,2025-10-13,Mathematics,25,2.16,VA,22030,C,Active,2026-10-07
+900172,Noor Grant,noor.grant@howard.edu,2025558169,2005-07-30,2024-10-02,Nursing,23,3.18,PA,19104,A,Active,2026-10-16
+900173,Noor Mensah,noor.mensah@howard.edu,2025553949,2004-03-11,2025-08-08,Engineering,109,3.0,DC,20059,A,Active,2026-10-17
+900174,Danai Nguyen,danai.nguyen@howard.edu,2025559632,2009-07-25,2025-04-03,Computer Science,0,3.32,VA,22030,A,Active,2026-10-24
+900175,Jolene Freeman,jolene.freeman@howard.edu,2025556225,2008-02-27,2025-06-25,Undeclared,31,2.59,NC,27707,A,Active,2026-10-06
+900176,Noor Nguyen,noor.nguyen@howard.edu,2025552180,2007-01-29,2025-06-06,Biology,21,3.03,TX,77004,A,Active,2026-10-07
+900177,Nadia Lopez,nadia.lopez@howard.edu,2025559556,2008-10-26,2024-10-01,Nursing,95,3.43,NY,10027,C,Active,2026-10-01
+900178,Caleb Udoh,caleb.udoh@howard.edu,2025550039,2008-01-23,2025-02-28,Nursing,107,1.81,CA,90095,C,Active,2026-10-24
+900179,Elias Vargas,elias.vargas@howard.edu,2025552343,2005-05-29,2024-11-02,Computer Science,119,3.68,TX,77004,C,Active,2026-10-07
+900180,Paloma Udoh,paloma.udoh@howard.edu,2025559638,2006-03-13,2025-03-17,Biology,91,2.6,DC,20059,A,Active,2026-10-20
+900181,Simone Vargas,simone.vargas@howard.edu,2025551128,2008-06-15,2024-08-28,Nursing,12,2.78,NC,27707,B,Active,2026-10-27
+900182,Omar Vargas,omar.vargas@howard.edu,2025553830,2004-12-07,2025-03-03,Undeclared,76,3.82,NC,27707,C,Active,2026-10-21
+900183,Caleb Walker,caleb.walker@howard.edu,2025550588,2008-02-28,2024-09-25,Psychology,87,2.99,IL,60637,A,Active,2026-10-05
+900184,Noor Ahmed,noor.ahmed@howard.edu,2025557988,2009-11-20,2024-12-11,Mathematics,14,2.48,TX,77004,C,Active,2026-09-27
+900185,Priya Vargas,priya.vargas@howard.edu,2025559703,2004-03-01,2024-11-29,Nursing,115,2.71,PA,19104,A,Active,2026-10-14
+900186,Yara Dubois,yara.dubois@howard.edu,2025553614,2004-02-13,2025-05-24,Mathematics,108,3.43,NY,10027,B,Active,2026-10-13
+900187,Caleb Price,caleb.price@howard.edu,2025556155,2004-07-17,2024-10-05,Undeclared,24,3.54,IL,60637,C,Active,2026-10-12
+900188,Fatima Freeman,fatima.freeman@howard.edu,2025556905,2004-02-21,2025-07-20,Psychology,91,2.43,CA,90095,A,Active,2026-10-27
+900189,Ibrahim Owens,ibrahim.owens@howard.edu,2025553778,2007-12-15,2025-06-22,Nursing,69,2.23,IL,60637,B,Active,2026-10-20
+900190,Amara Hayes,amara.hayes@howard.edu,2025555790,2004-09-10,2025-03-28,Mathematics,41,2.97,VA,22030,B,Active,2026-09-23
+900191,Tariq Moore,tariq.moore@howard.edu,2025550805,2008-07-17,2024-11-28,Engineering,106,1.27,NY,10027,B,Active,2026-09-25
+900192,Keisha Vargas,keisha.vargas@howard.edu,2025551067,2008-09-21,2024-12-30,Mathematics,42,3.22,CA,90095,C,Active,2026-09-06
+900193,Priya Lopez,priya.lopez@howard.edu,2025553312,2009-08-20,2024-11-22,Engineering,119,3.0,NC,27707,B,Active,2026-10-10
+900194,Noor Diallo,noor.diallo@howard.edu,2025559328,2004-09-06,2024-10-25,Mathematics,9,2.6,PA,19104,B,Active,2026-10-25
+900195,Rashid Osei,rashid.osei@howard.edu,2025556281,2007-05-04,2025-06-12,Economics,58,3.01,NY,10027,A,Active,2026-10-24
+900196,Imani Owens,imani.owens@howard.edu,2025550611,2008-01-17,2024-10-07,Engineering,122,2.21,DC,20059,B,Active,2026-10-24
+900197,Priya Patel,priya.patel@howard.edu,2025554840,2005-12-11,2025-03-23,Nursing,93,2.17,TX,77004,B,Active,2026-10-23
+900198,Imani Owens,imani.owens@howard.edu,2025554194,2009-08-11,2025-04-27,Engineering,36,3.01,IL,60637,A,Active,2026-10-24
+900199,Keisha Owens,keisha.owens@howard.edu,2025554293,2004-06-04,2024-11-22,Psychology,13,2.9,CA,90095,C,Active,2026-10-25
+900200,Zola Rivera,zola.rivera@howard.edu,2025552830,2005-01-16,2025-10-02,Computer Science,13,3.83,VA,22030,A,Active,2026-10-13
+900201,Noor Castillo,noor.castillo@howard.edu,2025552069,2005-10-05,2025-06-12,Computer Science,72,2.75,IL,60637,B,Active,2026-10-26
+900202,Paloma Nkemdirim,paloma.nkemdirim@howard.edu,2025558185,2006-05-29,2025-02-06,Engineering,15,3.69,GA,30314,A,Active,2026-10-15
+900203,Kwame Ahmed,kwame.ahmed@howard.edu,2025551021,2007-04-10,2025-06-22,Biology,42,2.55,CA,90095,A,Active,2026-10-13
+900204,Omar Kim,omar.kim@howard.edu,2025556217,2006-12-25,2025-02-14,Economics,92,2.76,MD,20742,C,Active,2026-10-07
+900205,Hana Grant,hana.grant@howard.edu,2025550004,2008-06-24,2025-06-02,Computer Science,99,3.41,PA,19104,A,Active,2026-10-15
+900206,Rashid Udoh,rashid.udoh@howard.edu,2025558490,2009-07-17,2025-08-18,Computer Science,10,2.73,MD,20742,C,Active,2026-10-12
+900207,Zola Kim,zola.kim@howard.edu,2025553102,2004-12-16,2024-11-20,Biology,55,2.25,NY,10027,C,Active,2026-09-17
+900208,Elias Xu,elias.xu@howard.edu,2025555521,2009-12-19,2024-09-28,Mathematics,46,3.26,TX,77004,A,Active,2026-10-24
+900209,Lamar Mensah,lamar.mensah@howard.edu,2025556373,2007-02-11,2025-06-23,Economics,79,3.92,GA,30314,A,Active,2026-10-15
+900210,Simone Thompson,simone.thompson@howard.edu,2025552975,2007-10-04,2025-06-10,Economics,26,2.91,TX,77004,B,Active,2026-10-04
+900211,Keisha Ibrahim,keisha.ibrahim@howard.edu,2025552330,2007-06-11,2024-11-11,Biology,82,2.98,TX,77004,A,Active,2026-10-08
+900212,Oscar Hayes,oscar.hayes@howard.edu,2025551337,2006-05-30,2024-09-09,Computer Science,92,3.13,CA,90095,B,Active,2026-10-19
+900213,Fatima Yusuf,fatima.yusuf@howard.edu,2025557528,2005-07-22,2025-03-10,Mathematics,26,2.5,CA,90095,A,Active,2026-09-22
+900214,Hana Nkemdirim,hana.nkemdirim@howard.edu,2025556519,2009-06-09,2025-04-09,Biology,116,2.82,IL,60637,C,Active,2026-10-07
+900215,Lamar Osei,lamar.osei@howard.edu,2025556631,2005-08-18,2025-09-02,Mathematics,7,2.92,IL,60637,C,Active,2026-10-27
+900216,Keisha Nkemdirim,keisha.nkemdirim@howard.edu,2025559638,2007-04-23,2025-03-24,Nursing,61,3.17,PA,19104,A,Active,2026-10-10
+900217,Rosa Silva,rosa.silva@howard.edu,2025557815,2005-04-23,2025-07-15,Nursing,51,3.47,IL,60637,A,Active,2026-10-27
+900218,Nadia Freeman,nadia.freeman@howard.edu,2025551702,2004-02-25,2025-09-28,Undeclared,65,2.71,TX,77004,C,Active,2026-10-25
+900219,Lamar Johnson,lamar.johnson@howard.edu,2025554880,2006-12-09,2025-07-07,Economics,52,3.32,CA,90095,A,Active,2026-10-07
+900220,Danai Udoh,danai.udoh@howard.edu,2025554858,2004-11-07,2025-06-06,Economics,32,4.0,GA,30314,C,Active,2026-10-27
+900221,Quincy Patel,quincy.patel@howard.edu,2025556746,2006-03-06,2025-01-26,Computer Science,28,1.77,NC,27707,C,Active,2026-10-18
+900222,Lamar Patel,lamar.patel@howard.edu,2025555213,2004-02-28,2024-10-12,Psychology,87,2.74,TX,77004,B,Active,2026-10-11
+900223,Amara Moore,amara.moore@howard.edu,2025554871,2006-10-08,2024-08-28,Mathematics,12,2.9,IL,60637,A,Active,2026-10-09
+900224,Rashid Thompson,rashid.thompson@howard.edu,2025551876,2009-02-14,2025-04-02,Economics,81,2.68,TX,77004,A,Active,2026-10-06
+900225,Rashid Nguyen,rashid.nguyen@howard.edu,2025554262,2004-07-22,2024-12-07,Economics,107,2.85,NY,10027,B,Active,2026-10-21
+900226,Fatima Hayes,fatima.hayes@howard.edu,2025554628,2006-08-07,2024-11-28,Biology,92,2.81,MD,20742,B,Active,2026-09-23
+900227,Rashid Yusuf,rashid.yusuf@howard.edu,2025558505,2004-04-29,2024-10-05,Psychology,81,3.41,VA,22030,A,Active,2026-10-13
+900228,Rashid Nkemdirim,rashid.nkemdirim@howard.edu,2025552252,2008-04-11,2025-09-21,Biology,4,2.25,IL,60637,C,Active,2026-10-09
+900229,Simone Castillo,simone.castillo@howard.edu,2025559237,2004-07-07,2025-04-11,Engineering,75,3.64,MD,20742,C,Active,2026-09-26
+900230,Jolene Ibrahim,jolene.ibrahim@howard.edu,2025557370,2006-03-26,2025-03-21,Nursing,110,3.3,NC,27707,C,Active,2026-10-23
+900231,Yara Brooks,yara.brooks@howard.edu,2025554649,2009-10-21,2025-05-26,Computer Science,123,2.94,VA,22030,B,Active,2026-10-04
+900232,Amara Nguyen,amara.nguyen@howard.edu,2025553637,2009-04-04,2024-11-22,Nursing,124,3.86,DC,20059,B,Active,2026-10-12
+900233,Simone Rivera,simone.rivera@howard.edu,2025559611,2006-09-23,2024-10-19,Undeclared,83,3.06,TX,77004,A,Active,2026-10-11
+900234,Daniel Price,daniel.price@howard.edu,2025553579,2005-05-01,2025-06-18,Economics,111,2.3,NY,10027,B,Active,2026-10-03
+900235,Jolene Thompson,jolene.thompson@howard.edu,2025556192,2009-02-10,2024-08-20,Biology,100,2.47,CA,90095,A,Active,2026-10-06
+900236,Tariq Thompson,tariq.thompson@howard.edu,2025556192,2005-01-24,2025-04-17,Undeclared,23,2.55,VA,22030,A,Active,2026-09-22
+900237,Elias Nguyen,elias.nguyen@howard.edu,2025551278,2009-02-25,2025-03-14,Nursing,43,3.32,NY,10027,B,Active,2026-10-20
+900238,Gabriel Thompson,gabriel.thompson@howard.edu,2025552433,2006-11-02,2025-10-10,Nursing,67,3.31,MD,20742,C,Active,2026-10-07
+900239,Omar Nkemdirim,omar.nkemdirim@howard.edu,2025558538,2009-11-27,2025-09-22,Economics,95,2.51,TX,77004,C,Active,2026-10-16
+900240,Daniel Price,daniel.price@howard.edu,2025550743,2007-11-10,2025-08-17,Computer Science,115,2.99,IL,60637,B,Active,2026-10-07
+900241,Rashid Jackson,rashid.jackson@howard.edu,2025557417,2008-08-07,2024-10-25,Economics,95,1.77,NC,27707,C,Active,2026-09-11
+900242,Leila Ibrahim,leila.ibrahim@howard.edu,2025550141,2008-09-28,2024-11-10,Engineering,55,2.95,GA,30314,C,Active,2026-10-14
+900243,Leila Thompson,leila.thompson@howard.edu,2025551165,2006-05-26,2025-09-26,Economics,22,2.52,GA,30314,A,Active,2026-10-22
+900244,Hana Zhang,hana.zhang@howard.edu,2025556751,2009-03-18,2025-05-02,Engineering,16,3.5,CA,90095,A,Active,2026-10-25
+900245,Zola Silva,zola.silva@howard.edu,2025553361,2004-01-01,2024-10-31,Engineering,14,2.72,TX,77004,B,Active,2026-10-13
+900246,Paloma Zhang,paloma.zhang@howard.edu,2025556962,2008-12-07,2025-05-29,Engineering,15,3.75,CA,90095,B,Active,2026-10-08
+900247,Amara Price,amara.price@howard.edu,2025556393,2008-02-28,2024-09-29,Undeclared,112,2.84,GA,30314,A,Active,2026-10-02
+900248,Danai Yusuf,danai.yusuf@howard.edu,2025556516,2009-06-28,2025-06-24,Psychology,122,3.01,NC,27707,A,Active,2026-10-03
+900249,Nadia Ahmed,nadia.ahmed@howard.edu,2025550336,2006-06-17,2024-09-29,Psychology,6,2.63,GA,30314,B,Active,2026-10-25
+900250,Noor Vargas,noor.vargas@howard.edu,2025558132,2006-03-22,2025-02-27,Biology,85,2.95,CA,90095,A,Active,2026-10-17
+900251,Daniel Nguyen,daniel.nguyen@howard.edu,2025551078,2006-01-23,2024-12-24,Biology,28,3.88,NY,10027,C,Active,2026-10-07
+900252,Leila Grant,leila.grant@howard.edu,2025552221,2004-08-26,2025-10-20,Biology,114,3.44,GA,30314,C,Active,2026-10-14
+900253,Yara Owens,yara.owens@howard.edu,2025554652,2006-09-20,2025-02-18,Economics,19,3.06,GA,30314,C,Active,2026-09-13
+900254,Oscar Owens,oscar.owens@howard.edu,2025550640,2007-10-14,2024-12-27,Economics,6,2.54,TX,77004,C,Active,2026-09-03
+900255,Quincy Kim,quincy.kim@howard.edu,2025554240,2009-07-10,2024-12-11,Mathematics,34,2.55,CA,90095,B,Active,2026-10-05
+900256,Maya Zhang,maya.zhang@howard.edu,2025551470,2007-06-09,2024-12-17,Economics,88,2.78,TX,77004,B,Active,2026-09-17
+900257,Paloma Price,paloma.price@howard.edu,2025553855,2004-09-16,2025-01-06,Biology,45,2.83,GA,30314,A,Active,2026-10-14
+900258,Leila Xu,leila.xu@howard.edu,2025550164,2004-07-07,2025-03-27,Mathematics,57,4.0,MD,20742,B,Active,2026-10-17
+900259,Rashid Mensah,rashid.mensah@howard.edu,2025555284,2009-11-01,2025-04-18,Mathematics,86,2.34,DC,20059,C,Active,2026-09-24
+900260,Fatima Walker,fatima.walker@howard.edu,2025557482,2008-05-09,2025-01-02,Undeclared,44,3.32,NY,10027,A,Active,2026-10-14
+900261,Elias Ahmed,elias.ahmed@howard.edu,2025559340,2005-02-20,2025-08-23,Mathematics,71,3.09,GA,30314,C,Active,2026-10-22
+900262,Marcus Rivera,marcus.rivera@howard.edu,2025559186,2007-05-04,2025-01-22,Undeclared,113,2.32,DC,20059,C,Active,2026-10-10
+900263,Keisha Freeman,keisha.freeman@howard.edu,2025554659,2007-02-20,2025-01-16,Engineering,20,1.43,NC,27707,A,Active,2026-09-25
+900264,Yara Hayes,yara.hayes@howard.edu,2025552911,2009-11-13,2025-10-19,Engineering,53,2.33,IL,60637,A,Active,2026-10-13
+900265,Nadia Mensah,nadia.mensah@howard.edu,2025551960,2008-04-19,2025-03-12,Psychology,92,2.3,MD,20742,C,Active,2026-10-26
+900266,Tariq Grant,tariq.grant@howard.edu,2025550031,2004-10-02,2025-01-20,Economics,83,3.13,NC,27707,A,Active,2026-10-15
+900267,Omar Brooks,omar.brooks@howard.edu,2025556386,2009-01-04,2024-11-12,Undeclared,15,2.03,DC,20059,B,Active,2026-10-03
+900268,Nadia Jackson,nadia.jackson@howard.edu,2025553187,2007-04-02,2024-12-17,Computer Science,32,3.5,DC,20059,A,Active,2026-10-15
+900269,Rosa Udoh,rosa.udoh@howard.edu,2025551491,2007-02-22,2024-09-19,Undeclared,22,4.0,DC,20059,B,Active,2026-10-05
+900270,Priya Silva,priya.silva@howard.edu,2025559994,2007-03-15,2025-02-01,Undeclared,76,2.72,VA,22030,B,Active,2026-10-07
+900271,Marcus Grant,marcus.grant@howard.edu,2025554391,2005-11-23,2025-10-08,Economics,99,2.96,GA,30314,C,Active,2026-09-30
+900272,Noor Walker,noor.walker@howard.edu,2025559059,2007-08-02,2024-09-09,Biology,85,4.0,CA,90095,B,Active,2026-10-13
+900273,Omar Xu,omar.xu@howard.edu,2025553290,2008-10-03,2025-09-05,Biology,101,2.17,MD,20742,A,Active,2026-10-18
+900274,Gabriel Vargas,gabriel.vargas@howard.edu,2025550810,2006-08-08,2024-09-29,Engineering,38,3.42,DC,20059,B,Active,2026-09-22
+900275,Jolene Johnson,jolene.johnson@howard.edu,2025553165,2004-02-22,2024-09-23,Economics,9,2.36,NY,10027,A,Active,2026-09-14
+900276,Marcus Diallo,marcus.diallo@howard.edu,2025556511,2006-04-15,2025-08-13,Engineering,9,2.99,PA,19104,B,Active,2026-09-12
+900277,Keisha Owens,keisha.owens@howard.edu,2025559617,2004-02-07,2025-08-14,Mathematics,39,2.67,NC,27707,C,Active,2026-10-20
+900278,Jolene Silva,jolene.silva@howard.edu,2025559183,2008-09-01,2025-05-07,Computer Science,85,3.18,CA,90095,B,Active,2026-10-13
+900279,Leila Nkemdirim,leila.nkemdirim@howard.edu,2025551990,2006-04-16,2025-10-04,Undeclared,22,2.54,IL,60637,C,Active,2026-09-30
+900280,Lamar Osei,lamar.osei@howard.edu,2025550958,2009-05-17,2025-08-13,Undeclared,43,2.29,GA,30314,A,Active,2026-10-24
+900281,Hana Zhang,hana.zhang@howard.edu,2025559033,2007-09-08,2025-05-17,Economics,82,3.46,IL,60637,B,Active,2026-10-20
+900282,Daniel Ibrahim,daniel.ibrahim@howard.edu,2025553974,2005-05-22,2025-04-25,Economics,44,3.17,VA,22030,B,Active,2026-10-21
+900283,Yara Patel,yara.patel@howard.edu,2025551844,2007-12-16,2025-04-12,Nursing,104,2.25,DC,20059,C,Active,2026-10-26
+900284,Lamar Nguyen,lamar.nguyen@howard.edu,2025558555,2008-02-28,2025-01-24,Psychology,22,3.25,GA,30314,A,Active,2026-10-26
+900285,Oscar Jackson,oscar.jackson@howard.edu,2025552386,2005-09-04,2024-12-20,Undeclared,120,2.77,MD,20742,A,Active,2026-10-16
+900286,Danai Osei,danai.osei@howard.edu,2025556534,2008-05-28,2025-03-14,Nursing,18,2.51,DC,20059,A,Active,2026-09-29
+900287,Tariq Yusuf,tariq.yusuf@howard.edu,2025558904,2008-09-06,2025-08-31,Engineering,56,4.0,NY,10027,C,Active,2026-10-13
+900288,Keisha Price,keisha.price@howard.edu,2025551394,2006-02-15,2024-08-19,Engineering,111,3.31,VA,22030,A,Active,2026-09-01
+900289,Noor Nkemdirim,noor.nkemdirim@howard.edu,2025553979,2005-11-02,2024-10-13,Engineering,62,3.48,IL,60637,B,Active,2026-10-26
+900290,Rashid Grant,rashid.grant@howard.edu,2025556581,2006-08-01,2025-02-05,Psychology,93,2.82,MD,20742,A,Active,2026-08-24
+900291,Amara Ahmed,amara.ahmed@howard.edu,2025555352,2004-09-12,2024-11-28,Biology,102,3.17,DC,20059,C,Active,2026-10-26
+900292,Oscar Ibrahim,oscar.ibrahim@howard.edu,2025550378,2005-07-06,2025-06-03,Psychology,20,3.23,MD,20742,B,Active,2026-09-15
+900293,Keisha Owens,keisha.owens@howard.edu,2025557811,2009-04-02,2025-04-22,Engineering,58,3.96,TX,77004,C,Active,2026-10-21
+900294,Zola Freeman,zola.freeman@howard.edu,2025552597,2007-01-29,2024-11-26,Nursing,118,2.96,DC,20059,A,Active,2026-10-09
+900295,Jolene Price,jolene.price@howard.edu,2025558604,2007-04-14,2025-05-06,Nursing,103,3.31,TX,77004,B,Active,2026-10-12
+900296,Ibrahim Xu,ibrahim.xu@howard.edu,2025551309,2005-10-14,2025-05-21,Mathematics,88,3.05,DC,20059,A,Active,2026-10-14
+900297,Elias Walker,elias.walker@howard.edu,2025551878,2005-10-14,2025-01-06,Biology,101,2.05,DC,20059,A,Active,2026-10-18
+900298,Nadia Udoh,nadia.udoh@howard.edu,2025552404,2007-03-14,2025-05-11,Economics,64,2.38,NC,27707,C,Active,2026-10-21
+900299,Oscar Silva,oscar.silva@howard.edu,2025556624,2009-12-10,2025-04-04,Computer Science,46,3.45,IL,60637,B,Active,2026-10-11
+900300,Elias Walker,elias.walker@howard.edu,2025558685,2005-07-28,2025-02-24,Biology,119,1.9,MD,20742,B,Active,2026-10-07
+900301,Amara Price,amara.price@howard.edu,2025552812,2009-03-28,2024-08-28,Undeclared,10,2.97,NC,27707,C,Active,2026-10-11
+900302,Amara Yusuf,amara.yusuf@howard.edu,2025553250,2009-11-25,2025-08-24,Undeclared,88,2.37,CA,90095,C,Active,2026-10-13
+900303,Ibrahim Xu,ibrahim.xu@howard.edu,2025554447,2007-10-20,2025-06-02,Nursing,23,3.62,VA,22030,C,Active,2026-10-18
+900304,Gabriel Osei,gabriel.osei@howard.edu,2025559075,2009-03-04,2024-08-22,Biology,46,1.93,VA,22030,A,Active,2026-10-08
+900305,Keisha Ahmed,keisha.ahmed@howard.edu,2025550341,2005-09-08,2025-05-06,Undeclared,64,2.18,NY,10027,A,Active,2026-10-27
+900306,Keisha Freeman,keisha.freeman@howard.edu,2025554109,2004-02-05,2025-08-26,Psychology,88,3.06,NY,10027,B,Active,2026-09-24
+900307,Elias Dubois,elias.dubois@howard.edu,2025550665,2007-04-12,2025-04-04,Computer Science,102,3.35,TX,77004,C,Active,2026-09-22
+900308,Omar Rivera,omar.rivera@howard.edu,2025553687,2008-05-17,2024-11-11,Engineering,65,3.45,MD,20742,A,Active,2026-09-23
+900309,Nadia Brooks,nadia.brooks@howard.edu,2025559351,2005-04-13,2025-03-03,Computer Science,33,2.7,GA,30314,C,Active,2026-10-11
+900310,Leila Grant,leila.grant@howard.edu,2025550858,2009-12-19,2024-12-11,Psychology,5,3.65,NY,10027,A,Active,2026-10-20
+900311,Danai Diallo,danai.diallo@howard.edu,2025559345,2009-10-15,2025-07-03,Biology,116,2.61,PA,19104,B,Active,2026-10-16
+900312,Fatima Kim,fatima.kim@howard.edu,2025551193,2006-04-01,2024-08-29,Engineering,43,3.37,DC,20059,C,Active,2026-10-19
+900313,Zola Brooks,zola.brooks@howard.edu,2025553564,2006-05-04,2025-08-27,Psychology,50,2.04,GA,30314,C,Active,2026-10-05
+900314,Zola Xu,zola.xu@howard.edu,2025554472,2008-11-01,2025-06-12,Biology,11,3.3,MD,20742,B,Active,2026-10-21
+900315,Caleb Xu,caleb.xu@howard.edu,2025557978,2006-05-11,2025-07-31,Psychology,5,2.68,DC,20059,C,Active,2026-09-23
+900316,Amara Brooks,amara.brooks@howard.edu,2025555472,2009-03-08,2024-09-09,Nursing,102,2.61,NY,10027,B,Active,2026-10-17
+900317,Priya Dubois,priya.dubois@howard.edu,2025558572,2006-09-21,2025-02-09,Nursing,0,2.05,CA,90095,A,Active,2026-10-16
+900318,Nadia Jackson,nadia.jackson@howard.edu,2025551927,2009-04-28,2025-09-22,Computer Science,79,2.12,TX,77004,B,Active,2026-10-25
+900319,Leila Vargas,leila.vargas@howard.edu,2025556359,2005-09-19,2025-10-13,Economics,11,3.35,NY,10027,A,Active,2026-10-24
+900320,Quincy Mensah,quincy.mensah@howard.edu,2025552465,2006-09-17,2025-01-10,Nursing,115,3.24,NY,10027,C,Active,2026-10-24
+900321,Jolene Hayes,jolene.hayes@howard.edu,2025558619,2006-06-12,2025-10-09,Psychology,63,2.64,TX,77004,C,Active,2026-10-10
+900322,Yara Diallo,yara.diallo@howard.edu,2025558923,2009-01-15,2025-09-30,Nursing,5,3.21,IL,60637,B,Active,2026-10-10
+900323,Noor Castillo,noor.castillo@howard.edu,2025558625,2004-09-05,2025-10-21,Psychology,98,2.47,TX,77004,B,Active,2026-10-14
+900324,Marcus Nkemdirim,marcus.nkemdirim@howard.edu,2025557747,2005-10-22,2025-05-01,Economics,123,3.36,PA,19104,C,Active,2026-10-26
+900325,Elias Kim,elias.kim@howard.edu,2025551901,2005-08-15,2024-11-19,Psychology,118,2.46,TX,77004,C,Active,2026-10-12
+900326,Ibrahim Nguyen,ibrahim.nguyen@howard.edu,2025554458,2005-07-18,2025-02-20,Biology,25,2.45,NC,27707,A,Active,2026-10-18
+900327,Yara Price,yara.price@howard.edu,2025559998,2005-02-28,2025-04-05,Psychology,41,2.17,NY,10027,C,Active,2026-10-17
+900328,Noor Grant,noor.grant@howard.edu,2025558582,2009-07-05,2025-05-16,Computer Science,58,3.53,MD,20742,A,Active,2026-10-17
+900329,Tariq Osei,tariq.osei@howard.edu,2025557019,2004-05-18,2024-10-06,Mathematics,82,2.83,PA,19104,B,Active,2026-10-18
+900330,Jolene Kim,jolene.kim@howard.edu,2025556514,2006-01-19,2025-07-05,Engineering,40,3.25,TX,77004,B,Active,2026-09-27
+900331,Keisha Hayes,keisha.hayes@howard.edu,2025558064,2008-08-12,2025-08-22,Mathematics,78,3.5,NC,27707,C,Active,2026-09-24
+900332,Priya Lopez,priya.lopez@howard.edu,2025550669,2008-04-15,2024-12-17,Psychology,105,2.38,DC,20059,C,Active,2026-10-13
+900333,Priya Moore,priya.moore@howard.edu,2025555718,2007-04-25,2025-06-10,Undeclared,71,2.69,CA,90095,A,Active,2026-10-22
+900334,Amara Udoh,amara.udoh@howard.edu,2025558149,2009-05-22,2024-12-30,Engineering,16,2.17,MD,20742,B,Active,2026-10-07
+900335,Paloma Patel,paloma.patel@howard.edu,2025551096,2007-06-28,2024-09-20,Biology,117,2.93,GA,30314,B,Active,2026-10-13
+900336,Kwame Moore,kwame.moore@howard.edu,2025558335,2009-05-28,2024-11-13,Economics,55,2.53,CA,90095,C,Active,2026-09-30
+900337,Hana Osei,hana.osei@howard.edu,2025551908,2004-05-20,2025-08-13,Economics,44,2.26,IL,60637,C,Active,2026-09-28
+900338,Nadia Jackson,nadia.jackson@howard.edu,2025559939,2008-05-29,2025-05-30,Engineering,1,2.91,GA,30314,A,Active,2026-10-16
+900339,Oscar Udoh,oscar.udoh@howard.edu,2025558390,2005-03-03,2024-08-20,Mathematics,27,3.16,PA,19104,C,Active,2026-09-24
+900340,Kwame Patel,kwame.patel@howard.edu,2025552070,2009-05-17,2025-05-13,Undeclared,104,2.16,IL,60637,C,Active,2026-10-23
+900341,Kwame Brooks,kwame.brooks@howard.edu,2025554209,2007-09-23,2025-02-15,Mathematics,34,2.68,TX,77004,B,Active,2026-10-19
+900342,Yara Brooks,yara.brooks@howard.edu,2025559490,2009-09-15,2025-05-14,Engineering,39,2.27,MD,20742,A,Active,2026-09-25
+900343,Quincy Brooks,quincy.brooks@howard.edu,2025553392,2004-06-23,2024-11-13,Computer Science,37,2.6,VA,22030,A,Active,2026-09-29
+900344,Rashid Hayes,rashid.hayes@howard.edu,2025551066,2004-10-24,2025-04-17,Biology,110,2.41,GA,30314,A,Active,2026-10-22
+900345,Paloma Dubois,paloma.dubois@howard.edu,2025552791,2006-12-12,2025-05-05,Undeclared,1,3.51,PA,19104,A,Active,2026-10-07
+900346,Lamar Dubois,lamar.dubois@howard.edu,2025553597,2004-11-06,2024-10-23,Psychology,57,3.04,IL,60637,A,Active,2026-09-29
+900347,Caleb Diallo,caleb.diallo@howard.edu,2025556888,2006-04-06,2025-09-10,Undeclared,113,3.05,GA,30314,A,Active,2026-10-11
+900348,Zola Walker,zola.walker@howard.edu,2025554080,2008-02-21,2025-07-31,Nursing,22,2.71,MD,20742,B,Active,2026-10-15
+900349,Elias Dubois,elias.dubois@howard.edu,2025555596,2008-11-14,2025-07-21,Engineering,63,2.91,IL,60637,A,Active,2026-10-20
+900350,Zola Nguyen,zola.nguyen@howard.edu,2025551518,2005-01-26,2025-02-25,Economics,6,2.95,IL,60637,B,Active,2026-10-08
+900351,Jolene Vargas,jolene.vargas@howard.edu,2025550365,2006-11-08,2025-10-07,Undeclared,43,2.46,NC,27707,B,Active,2026-10-27
+900352,Keisha Johnson,keisha.johnson@howard.edu,2025559833,2007-06-05,2024-09-17,Engineering,24,3.6,PA,19104,B,Active,2026-10-22
+900353,Priya Walker,priya.walker@howard.edu,2025558171,2004-07-15,2024-12-14,Engineering,32,2.94,IL,60637,A,Active,2026-10-14
+900354,Yara Brooks,yara.brooks@howard.edu,2025559540,2006-04-21,2025-10-20,Economics,119,2.83,MD,20742,A,Active,2026-10-01
+900355,Yara Lopez,yara.lopez@howard.edu,2025554445,2004-01-03,2025-09-16,Undeclared,14,2.92,CA,90095,B,Active,2026-10-07
+900356,Paloma Walker,paloma.walker@howard.edu,2025556410,2004-09-05,2025-08-10,Nursing,40,3.23,NC,27707,B,Active,2026-10-13
+900357,Imani Vargas,imani.vargas@howard.edu,2025553117,2005-12-17,2025-02-08,Computer Science,97,2.25,GA,30314,B,Active,2026-10-21
+900358,Omar Freeman,omar.freeman@howard.edu,2025555216,2004-11-27,2025-03-04,Psychology,28,3.02,NY,10027,A,Active,2026-10-13
+900359,Kwame Ahmed,kwame.ahmed@howard.edu,2025551214,2004-06-13,2025-03-12,Undeclared,91,1.97,DC,20059,C,Active,2026-09-09
+900360,Ibrahim Nkemdirim,ibrahim.nkemdirim@howard.edu,2025555158,2005-09-13,2024-09-27,Nursing,70,2.21,IL,60637,B,Active,2026-09-12
+900361,Omar Mensah,omar.mensah@howard.edu,2025552160,2005-01-14,2024-10-10,Nursing,49,2.18,GA,30314,A,Active,2026-10-23
+900362,Ibrahim Patel,ibrahim.patel@howard.edu,2025552972,2007-04-09,2025-04-05,Engineering,62,2.59,IL,60637,A,Active,2026-10-19
+900363,Caleb Johnson,caleb.johnson@howard.edu,2025551806,2009-07-23,2025-03-07,Undeclared,85,3.27,DC,20059,B,Active,2026-10-26
+900364,Tariq Mensah,tariq.mensah@howard.edu,2025558944,2004-03-04,2025-06-30,Biology,46,3.28,NC,27707,C,Active,2026-10-17
+900365,Danai Johnson,danai.johnson@howard.edu,2025554763,2005-09-16,2025-01-07,Psychology,104,2.76,VA,22030,A,Active,2026-10-05
+900366,Priya Castillo,priya.castillo@howard.edu,2025551833,2008-02-25,2024-11-27,Biology,74,3.1,TX,77004,C,Active,2026-10-22
+900367,Yara Price,yara.price@howard.edu,2025555195,2008-05-31,2025-10-18,Mathematics,20,2.81,VA,22030,A,Active,2026-10-13
+900368,Quincy Patel,quincy.patel@howard.edu,2025554332,2008-12-14,2025-01-12,Mathematics,85,2.81,VA,22030,B,Active,2026-10-25
+900369,Oscar Grant,oscar.grant@howard.edu,2025556031,2009-12-18,2024-09-05,Biology,72,3.41,NY,10027,B,Active,2026-09-20
+900370,Leila Udoh,leila.udoh@howard.edu,2025553569,2006-11-24,2025-10-01,Biology,39,3.24,VA,22030,B,Active,2026-10-26
+900371,Hana Jackson,hana.jackson@howard.edu,2025553824,2007-05-11,2024-11-15,Computer Science,77,3.86,NY,10027,C,Active,2026-10-14
+900372,Hana Grant,hana.grant@howard.edu,2025555387,2007-03-28,2025-01-23,Undeclared,42,2.41,GA,30314,B,Active,2026-09-23
+900373,Paloma Price,paloma.price@howard.edu,2025550104,2008-11-08,2025-08-26,Undeclared,77,2.52,DC,20059,C,Active,2026-10-03
+900374,Quincy Nguyen,quincy.nguyen@howard.edu,2025553705,2004-11-03,2025-03-13,Biology,6,2.38,PA,19104,A,Active,2026-10-10
+900375,Simone Patel,simone.patel@howard.edu,2025551330,2008-03-01,2025-08-05,Undeclared,108,2.8,VA,22030,C,Active,2026-10-02
+900376,Amara Mensah,amara.mensah@howard.edu,2025552817,2006-04-18,2025-03-13,Economics,60,2.31,CA,90095,A,Active,2026-10-17
+900377,Hana Zhang,hana.zhang@howard.edu,2025557029,2008-12-06,2024-11-10,Computer Science,1,2.04,NC,27707,B,Active,2026-09-30
+900378,Paloma Ahmed,paloma.ahmed@howard.edu,2025553662,2007-10-14,2025-07-28,Engineering,8,2.44,TX,77004,C,Active,2026-10-21
+900379,Quincy Walker,quincy.walker@howard.edu,2025550610,2009-02-15,2024-11-30,Biology,67,4.0,NC,27707,C,Active,2026-10-15
+900380,Imani Patel,imani.patel@howard.edu,2025558621,2006-11-10,2025-02-01,Mathematics,103,3.13,TX,77004,C,Active,2026-10-12
+900381,Elias Walker,elias.walker@howard.edu,2025550372,2008-09-02,2024-11-19,Biology,72,3.12,VA,22030,A,Active,2026-10-11
+900382,Zola Nguyen,zola.nguyen@howard.edu,2025558748,2008-02-11,2025-07-22,Biology,3,1.87,MD,20742,B,Active,2026-09-16
+900383,Omar Jackson,omar.jackson@howard.edu,2025557027,2008-07-11,2024-11-05,Computer Science,65,2.94,CA,90095,A,Active,2026-10-25
+900384,Danai Patel,danai.patel@howard.edu,2025551700,2008-12-06,2025-06-13,Undeclared,87,2.88,MD,20742,A,Active,2026-10-03
+900385,Danai Castillo,danai.castillo@howard.edu,2025557579,2004-07-10,2025-08-17,Undeclared,20,2.97,TX,77004,A,Active,2026-10-09
+900386,Oscar Rivera,oscar.rivera@howard.edu,2025550473,2007-08-05,2025-05-22,Economics,120,1.83,PA,19104,B,Active,2026-10-14
+900387,Oscar Ahmed,oscar.ahmed@howard.edu,2025559330,2008-03-28,2025-05-07,Computer Science,52,2.37,MD,20742,A,Active,2026-10-01
+900388,Danai Hayes,danai.hayes@howard.edu,2025555971,2004-12-18,2025-05-15,Engineering,84,2.58,IL,60637,B,Active,2026-10-14
+900389,Leila Nkemdirim,leila.nkemdirim@howard.edu,2025555006,2005-04-24,2024-09-28,Computer Science,18,3.47,NC,27707,B,Active,2026-10-24
+900390,Leila Nguyen,leila.nguyen@howard.edu,2025557970,2008-06-25,2025-04-27,Mathematics,4,2.85,GA,30314,A,Active,2026-10-12
+900391,Omar Diallo,omar.diallo@howard.edu,2025554230,2008-06-17,2025-04-10,Engineering,101,2.05,VA,22030,B,Active,2026-10-06
+900392,Danai Zhang,danai.zhang@howard.edu,2025559545,2006-04-09,2025-06-06,Nursing,124,2.25,MD,20742,C,Active,2026-10-11
+900393,Omar Grant,omar.grant@howard.edu,2025553070,2006-12-28,2025-03-29,Biology,37,2.84,NC,27707,B,Active,2026-10-22
+900394,Kwame Johnson,kwame.johnson@howard.edu,2025552202,2004-05-10,2025-06-26,Undeclared,14,2.64,TX,77004,A,Active,2026-10-11
+900395,Imani Silva,imani.silva@howard.edu,2025551737,2009-07-30,2025-04-04,Economics,69,2.71,VA,22030,B,Active,2026-09-19
+900396,Simone Zhang,simone.zhang@howard.edu,2025550286,2009-06-20,2025-03-12,Nursing,8,3.33,NC,27707,B,Active,2026-10-23
+900397,Noor Osei,noor.osei@howard.edu,2025559326,2005-04-14,2025-06-07,Computer Science,29,3.4,NY,10027,B,Active,2026-10-14
+900398,Paloma Mensah,paloma.mensah@howard.edu,2025559271,2009-01-21,2025-02-11,Biology,83,2.91,VA,22030,A,Active,2026-10-07
+900399,Gabriel Kim,gabriel.kim@howard.edu,2025557086,2009-01-29,2024-11-19,Undeclared,1,3.14,GA,30314,A,Active,2026-10-26
+900400,Rosa Ibrahim,rosa.ibrahim@howard.edu,2025552928,2004-06-02,2025-03-19,Biology,30,3.14,IL,60637,B,Active,2026-10-20
+900401,Oscar Kim,oscar.kim@howard.edu,2025559403,2008-04-17,2024-11-22,Economics,96,3.5,MD,20742,B,Active,2026-10-20
+900402,Keisha Brooks,keisha.brooks@howard.edu,2025550370,2009-09-20,2024-08-30,Computer Science,21,3.38,PA,19104,B,Active,2026-10-20
+900403,Marcus Price,marcus.price@howard.edu,2025551818,2005-06-27,2024-10-11,Nursing,18,1.31,CA,90095,B,Active,2026-10-17
+900404,Amara Dubois,amara.dubois@howard.edu,2025558882,2006-11-09,2025-04-08,Nursing,20,3.62,CA,90095,C,Active,2026-09-21
+900405,Paloma Xu,paloma.xu@howard.edu,2025551175,2009-06-05,2025-08-20,Mathematics,118,2.84,PA,19104,C,Active,2026-10-13
+900406,Rashid Zhang,rashid.zhang@howard.edu,2025550182,2004-01-08,2024-11-16,Economics,30,2.9,VA,22030,B,Active,2026-10-15
+900407,Priya Walker,priya.walker@howard.edu,2025558400,2007-03-05,2024-09-14,Engineering,78,2.81,GA,30314,B,Active,2026-10-17
+900408,Omar Hayes,omar.hayes@howard.edu,2025556434,2007-02-25,2025-07-25,Engineering,87,3.09,CA,90095,A,Active,2026-10-27
+900409,Tariq Osei,tariq.osei@howard.edu,2025554202,2007-01-13,2025-03-22,Biology,1,2.74,VA,22030,C,Active,2026-10-18
+900410,Amara Udoh,amara.udoh@howard.edu,2025554687,2004-05-26,2025-08-31,Computer Science,115,2.39,NC,27707,C,Active,2026-10-13
+900411,Ibrahim Silva,ibrahim.silva@howard.edu,2025557587,2008-10-22,2025-05-01,Psychology,120,2.67,NY,10027,B,Active,2026-10-21
+900412,Maya Jackson,maya.jackson@howard.edu,2025557429,2007-11-05,2025-03-12,Engineering,14,2.62,TX,77004,C,Active,2026-09-30
+900413,Noor Diallo,noor.diallo@howard.edu,2025556132,2009-12-23,2025-10-19,Computer Science,2,2.62,PA,19104,C,Active,2026-09-07
+900414,Amara Jackson,amara.jackson@howard.edu,2025555532,2005-07-27,2024-10-17,Nursing,13,3.32,IL,60637,C,Active,2026-10-09
+900415,Elias Thompson,elias.thompson@howard.edu,2025550297,2005-09-24,2025-08-10,Computer Science,37,2.57,TX,77004,A,Active,2026-10-09
+900416,Yara Brooks,yara.brooks@howard.edu,2025553807,2004-09-05,2025-05-05,Economics,47,2.98,MD,20742,A,Active,2026-10-23
+900417,Fatima Grant,fatima.grant@howard.edu,2025553390,2005-05-22,2025-08-03,Undeclared,80,3.62,VA,22030,B,Active,2026-10-21
+900418,Zola Dubois,zola.dubois@howard.edu,2025556168,2009-10-08,2025-06-14,Biology,115,2.64,GA,30314,A,Active,2026-10-06
+900419,Tariq Silva,tariq.silva@howard.edu,2025555710,2006-08-21,2025-07-28,Economics,43,2.81,TX,77004,B,Active,2026-10-15
+900420,Keisha Johnson,keisha.johnson@howard.edu,2025551783,2005-10-12,2025-01-12,Undeclared,10,3.2,MD,20742,B,Active,2026-09-20
+900421,Zola Dubois,zola.dubois@howard.edu,2025558113,2006-04-28,2025-06-14,Mathematics,6,3.43,TX,77004,A,Active,2026-10-22
+900422,Priya Mensah,priya.mensah@howard.edu,2025551927,2007-01-08,2025-01-09,Computer Science,97,4.0,TX,77004,B,Active,2026-10-15
+900423,Quincy Ahmed,quincy.ahmed@howard.edu,2025558443,2009-10-17,2025-09-09,Computer Science,11,1.77,CA,90095,C,Active,2026-10-04
+900424,Marcus Yusuf,marcus.yusuf@howard.edu,2025559324,2009-03-06,2025-06-25,Engineering,123,2.96,NC,27707,C,Active,2026-10-14
+900425,Lamar Jackson,lamar.jackson@howard.edu,2025557935,2009-07-18,2024-09-24,Economics,50,2.73,IL,60637,C,Active,2026-10-03
+900426,Rashid Johnson,rashid.johnson@howard.edu,2025550182,2005-02-18,2025-05-02,Computer Science,16,3.19,VA,22030,A,Active,2026-10-23
+900427,Tariq Ibrahim,tariq.ibrahim@howard.edu,2025554288,2005-04-24,2024-11-04,Nursing,10,3.02,NC,27707,B,Active,2026-09-19
+900428,Amara Nkemdirim,amara.nkemdirim@howard.edu,2025555626,2004-09-28,2024-10-31,Undeclared,7,2.6,DC,20059,A,Active,2026-10-24
+900429,Yara Jackson,yara.jackson@howard.edu,2025550322,2006-08-05,2025-08-24,Mathematics,61,2.98,IL,60637,A,Active,2026-10-19
+900430,Leila Castillo,leila.castillo@howard.edu,2025555609,2004-12-13,2025-04-17,Biology,2,2.65,CA,90095,A,Active,2026-10-09
+900431,Priya Grant,priya.grant@howard.edu,2025551890,2005-04-18,2025-07-05,Economics,15,2.94,NC,27707,C,Active,2026-09-29
+900432,Daniel Hayes,daniel.hayes@howard.edu,2025557199,2009-06-30,2025-02-07,Biology,76,2.62,NC,27707,C,Active,2026-10-27
+900433,Paloma Castillo,paloma.castillo@howard.edu,2025552110,2007-03-09,2025-06-14,Engineering,121,3.01,MD,20742,C,Active,2026-10-26
+900434,Simone Jackson,simone.jackson@howard.edu,2025553587,2004-01-04,2025-05-20,Economics,109,3.25,IL,60637,A,Active,2026-10-23
+900435,Omar Lopez,omar.lopez@howard.edu,2025554193,2005-05-06,2025-03-04,Nursing,36,3.16,CA,90095,C,Active,2026-10-23
+900436,Simone Thompson,simone.thompson@howard.edu,2025551035,2009-11-04,2025-02-12,Biology,27,3.08,VA,22030,B,Active,2026-10-12
+900437,Marcus Hayes,marcus.hayes@howard.edu,2025556723,2007-04-04,2025-05-30,Undeclared,23,2.75,NC,27707,A,Active,2026-10-17
+900438,Marcus Lopez,marcus.lopez@howard.edu,2025559923,2007-01-29,2025-08-03,Mathematics,29,4.0,CA,90095,C,Active,2026-10-17
+900439,Priya Rivera,priya.rivera@howard.edu,2025558628,2008-02-19,2025-10-20,Economics,88,2.75,MD,20742,A,Active,2026-10-16
+900440,Zola Vargas,zola.vargas@howard.edu,2025555787,2007-01-08,2025-05-31,Computer Science,14,3.4,IL,60637,B,Active,2026-10-07
+900441,Hana Diallo,hana.diallo@howard.edu,2025553881,2009-05-23,2025-07-03,Computer Science,118,2.69,PA,19104,B,Active,2026-10-04
+900442,Amara Moore,amara.moore@howard.edu,2025551428,2005-10-07,2025-01-27,Nursing,33,2.37,NY,10027,B,Active,2026-10-18
+900443,Jolene Nkemdirim,jolene.nkemdirim@howard.edu,2025550311,2009-03-27,2024-10-07,Mathematics,17,3.07,CA,90095,A,Active,2026-10-16
+900444,Omar Walker,omar.walker@howard.edu,2025552117,2004-02-01,2025-08-27,Economics,4,2.13,NC,27707,C,Active,2026-09-10
+900445,Paloma Xu,paloma.xu@howard.edu,2025559094,2007-07-29,2024-10-28,Economics,75,2.6,DC,20059,A,Active,2026-10-08
+900446,Kwame Dubois,kwame.dubois@howard.edu,2025554438,2008-05-22,2024-10-09,Nursing,16,3.49,GA,30314,C,Active,2026-09-07
+900447,Rashid Zhang,rashid.zhang@howard.edu,2025559381,2007-06-01,2025-01-28,Psychology,42,3.02,NY,10027,B,Active,2026-10-16
+900448,Nadia Ibrahim,nadia.ibrahim@howard.edu,2025552832,2006-10-10,2025-03-19,Biology,44,3.44,PA,19104,B,Active,2026-10-10
+900449,Ibrahim Moore,ibrahim.moore@howard.edu,2025556317,2009-06-04,2025-03-26,Computer Science,60,3.47,NC,27707,B,Active,2026-10-08
+900450,Ibrahim Mensah,ibrahim.mensah@howard.edu,2025554733,2008-04-09,2025-05-12,Computer Science,0,4.0,DC,20059,C,Active,2026-10-13
+900451,Simone Dubois,simone.dubois@howard.edu,2025554972,2006-01-11,2025-08-09,Nursing,7,3.85,GA,30314,C,Active,2026-10-15
+900452,Maya Kim,maya.kim@howard.edu,2025555995,2008-12-02,2024-12-21,Undeclared,119,2.14,NY,10027,C,Active,2026-10-23
+900453,Simone Yusuf,simone.yusuf@howard.edu,2025550576,2004-09-14,2025-02-14,Nursing,87,2.85,DC,20059,A,Active,2026-10-10
+900454,Simone Owens,simone.owens@howard.edu,2025559443,2005-06-07,2025-06-14,Nursing,74,2.76,DC,20059,A,Active,2026-09-21
+900455,Yara Thompson,yara.thompson@howard.edu,2025554041,2006-05-31,2025-02-03,Engineering,34,2.97,DC,20059,A,Active,2026-10-27
+900456,Quincy Price,quincy.price@howard.edu,2025558342,2006-03-18,2025-09-14,Engineering,85,3.02,TX,77004,C,Active,2026-10-24
+900457,Elias Hayes,elias.hayes@howard.edu,2025552190,2005-06-26,2025-09-28,Undeclared,109,2.97,PA,19104,A,Active,2026-10-16
+900458,Hana Rivera,hana.rivera@howard.edu,2025553992,2004-05-10,2025-05-16,Economics,45,3.83,VA,22030,B,Active,2026-09-19
+900459,Quincy Johnson,quincy.johnson@howard.edu,2025559484,2007-11-28,2025-07-04,Mathematics,87,3.11,GA,30314,B,Active,2026-09-24
+900460,Amara Nguyen,amara.nguyen@howard.edu,2025551678,2004-10-16,2024-12-23,Economics,9,3.27,MD,20742,B,Active,2026-09-18
+900461,Rashid Patel,rashid.patel@howard.edu,2025554188,2006-06-19,2025-09-14,Psychology,68,3.51,DC,20059,C,Active,2026-09-23
+900462,Maya Freeman,maya.freeman@howard.edu,2025552538,2006-07-24,2024-09-01,Mathematics,71,3.81,IL,60637,C,Active,2026-10-21
+900463,Danai Brooks,danai.brooks@howard.edu,2025554949,2008-01-08,2024-12-03,Engineering,3,3.23,GA,30314,C,Active,2026-10-19
+900464,Caleb Hayes,caleb.hayes@howard.edu,2025552827,2009-02-27,2025-01-28,Engineering,65,2.74,MD,20742,A,Active,2026-10-15
+900465,Hana Dubois,hana.dubois@howard.edu,2025553884,2005-08-04,2025-09-25,Economics,98,2.82,GA,30314,A,Active,2026-10-21
+900466,Zola Diallo,zola.diallo@howard.edu,2025558549,2005-04-26,2025-06-08,Mathematics,74,2.81,IL,60637,B,Active,2026-10-23
+900467,Elias Dubois,elias.dubois@howard.edu,2025556861,2009-05-28,2024-09-23,Biology,18,2.81,TX,77004,C,Active,2026-10-16
+900468,Lamar Freeman,lamar.freeman@howard.edu,2025550382,2006-02-12,2025-05-29,Engineering,115,3.15,DC,20059,C,Active,2026-10-20
+900469,Gabriel Ahmed,gabriel.ahmed@howard.edu,2025550737,2006-02-15,2025-10-12,Psychology,30,2.4,DC,20059,C,Active,2026-10-02
+900470,Caleb Nguyen,caleb.nguyen@howard.edu,2025556891,2006-04-27,2024-09-01,Psychology,31,2.3,NC,27707,C,Active,2026-10-25
+900471,Imani Johnson,imani.johnson@howard.edu,2025555805,2004-02-21,2024-11-01,Engineering,115,2.38,DC,20059,C,Active,2026-10-01
+900472,Rosa Castillo,rosa.castillo@howard.edu,2025552505,2008-09-04,2025-09-12,Mathematics,76,2.7,VA,22030,C,Active,2026-10-13
+900473,Leila Jackson,leila.jackson@howard.edu,2025553205,2006-03-18,2025-05-26,Undeclared,14,3.39,NY,10027,B,Active,2026-10-13
+900474,Marcus Hayes,marcus.hayes@howard.edu,2025556248,2007-08-13,2024-09-08,Psychology,64,2.53,CA,90095,C,Active,2026-10-22
+900475,Elias Silva,elias.silva@howard.edu,2025552348,2004-03-07,2025-10-07,Biology,94,2.5,TX,77004,B,Active,2026-10-21
+900476,Gabriel Freeman,gabriel.freeman@howard.edu,2025558515,2007-08-20,2025-02-01,Nursing,73,3.25,NY,10027,A,Active,2026-10-07
+900477,Maya Udoh,maya.udoh@howard.edu,2025553964,2005-10-19,2025-04-12,Nursing,96,2.14,DC,20059,C,Active,2026-10-25
+900478,Oscar Ibrahim,oscar.ibrahim@howard.edu,2025551033,2004-06-05,2025-05-29,Psychology,35,3.93,NY,10027,C,Active,2026-10-17
+900479,Paloma Price,paloma.price@howard.edu,2025554216,2006-05-29,2025-01-30,Engineering,40,1.7,NC,27707,B,Active,2026-09-23
+900480,Yara Ibrahim,yara.ibrahim@howard.edu,2025556672,2007-02-22,2024-08-22,Biology,65,3.16,DC,20059,A,Active,2026-10-11
+900481,Ibrahim Freeman,ibrahim.freeman@howard.edu,2025553790,2008-07-30,2025-03-26,Computer Science,14,3.19,TX,77004,B,Active,2026-10-05
+900482,Ibrahim Patel,ibrahim.patel@howard.edu,2025552770,2005-10-15,2025-01-27,Computer Science,27,3.18,NY,10027,C,Active,2026-10-18
+900483,Nadia Owens,nadia.owens@howard.edu,2025558570,2007-02-17,2024-10-10,Psychology,119,2.25,DC,20059,A,Active,2026-10-21
+900484,Paloma Udoh,paloma.udoh@howard.edu,2025557467,2007-05-14,2024-09-18,Psychology,115,3.48,NY,10027,B,Active,2026-10-21
+900485,Keisha Ahmed,keisha.ahmed@howard.edu,2025551403,2004-08-28,2025-01-23,Biology,107,3.02,CA,90095,B,Active,2026-10-12
+900486,Oscar Mensah,oscar.mensah@howard.edu,2025550877,2004-05-25,2025-03-30,Computer Science,69,2.66,TX,77004,B,Active,2026-10-22
+900487,Maya Moore,maya.moore@howard.edu,2025550560,2005-12-05,2025-06-26,Biology,74,1.49,VA,22030,C,Active,2026-09-16
+900488,Tariq Diallo,tariq.diallo@howard.edu,2025552688,2006-01-07,2025-05-13,Computer Science,73,3.62,VA,22030,B,Active,2026-10-20
+900489,Quincy Zhang,quincy.zhang@howard.edu,2025553636,2008-03-26,2025-09-05,Engineering,30,2.81,VA,22030,C,Active,2026-10-20
+900490,Rashid Price,rashid.price@howard.edu,2025554050,2006-01-02,2025-09-14,Psychology,46,2.48,VA,22030,A,Active,2026-10-06
+900491,Elias Brooks,elias.brooks@howard.edu,2025553668,2009-03-16,2024-12-16,Biology,98,3.49,IL,60637,A,Active,2026-10-06
+900492,Danai Thompson,danai.thompson@howard.edu,2025559913,2009-08-18,2025-10-02,Engineering,87,2.05,TX,77004,B,Active,2026-09-27
+900493,Kwame Dubois,kwame.dubois@howard.edu,2025551074,2005-04-28,2025-10-07,Computer Science,89,2.39,PA,19104,B,Active,2026-10-14
+900494,Gabriel Castillo,gabriel.castillo@howard.edu,2025552630,2007-01-17,2025-08-20,Psychology,3,2.51,IL,60637,C,Active,2026-10-22
+900495,Keisha Patel,keisha.patel@howard.edu,2025554893,2008-05-25,2025-10-01,Economics,13,3.23,VA,22030,B,Active,2026-09-12
+900496,Omar Walker,omar.walker@howard.edu,2025557425,2009-03-02,2025-09-08,Computer Science,113,3.27,TX,77004,C,Active,2026-10-19
+900497,Keisha Mensah,keisha.mensah@howard.edu,2025557036,2008-04-09,2024-09-09,Mathematics,115,2.48,DC,20059,A,Active,2026-10-16
+900498,Leila Silva,leila.silva@howard.edu,2025558692,2006-01-30,2025-09-05,Mathematics,40,3.58,CA,90095,B,Active,2026-10-21
+900499,Amara Zhang,amara.zhang@howard.edu,2025555976,2008-11-10,2025-03-01,Mathematics,42,3.77,NC,27707,C,Active,2026-09-25
+900500,Lamar Owens,lamar.owens@howard.edu,2025551039,2005-08-27,2024-12-05,Psychology,91,3.67,PA,19104,C,Active,2026-10-25
+900501,Gabriel Johnson,gabriel.johnson@howard.edu,2025553684,2005-04-12,2025-05-25,Nursing,104,1.97,NC,27707,C,Active,2026-10-22
+900502,Zola Osei,zola.osei@howard.edu,2025558533,2005-01-29,2024-08-24,Nursing,51,3.26,VA,22030,A,Active,2026-10-26
+900503,Fatima Brooks,fatima.brooks@howard.edu,2025554953,2004-12-21,2025-03-24,Undeclared,35,3.09,GA,30314,A,Active,2026-10-05
+900504,Lamar Brooks,lamar.brooks@howard.edu,2025553221,2008-03-08,2025-10-15,Psychology,107,3.37,NY,10027,A,Active,2026-10-07
+900505,Keisha Dubois,keisha.dubois@howard.edu,2025558901,2005-06-13,2025-03-31,Nursing,92,3.43,GA,30314,C,Active,2026-10-11
+900506,Kwame Jackson,kwame.jackson@howard.edu,2025554156,2005-03-17,2025-02-05,Economics,91,2.54,MD,20742,B,Active,2026-09-04
+900507,Tariq Nguyen,tariq.nguyen@howard.edu,2025553234,2005-01-19,2025-03-11,Undeclared,59,3.59,GA,30314,A,Active,2026-10-26
+900508,Ibrahim Silva,ibrahim.silva@howard.edu,2025553321,2004-05-26,2025-02-13,Mathematics,0,3.89,GA,30314,B,Active,2026-10-11
+900509,Marcus Patel,marcus.patel@howard.edu,2025556347,2009-10-28,2025-05-04,Mathematics,57,2.5,DC,20059,C,Active,2026-10-22
+900510,Daniel Lopez,daniel.lopez@howard.edu,2025550727,2008-12-04,2025-09-13,Computer Science,33,2.82,IL,60637,C,Active,2026-10-09
+900511,Rosa Castillo,rosa.castillo@howard.edu,2025553567,2009-03-21,2025-03-19,Mathematics,36,3.29,DC,20059,B,Active,2026-10-22
+900512,Kwame Johnson,kwame.johnson@howard.edu,2025551818,2005-11-23,2024-09-11,Engineering,106,3.84,NY,10027,B,Active,2026-10-20
+900513,Daniel Yusuf,daniel.yusuf@howard.edu,2025557973,2005-05-30,2025-06-07,Biology,94,3.67,GA,30314,B,Active,2026-10-10
+900514,Kwame Johnson,kwame.johnson@howard.edu,2025556808,2006-03-26,2025-03-06,Computer Science,118,3.71,TX,77004,A,Active,2026-09-29
+900515,Fatima Brooks,fatima.brooks@howard.edu,2025558178,2007-01-10,2024-09-25,Nursing,66,3.6,NY,10027,A,Active,2026-10-25
+900516,Rashid Walker,rashid.walker@howard.edu,2025551449,2005-05-11,2025-07-17,Psychology,90,2.51,IL,60637,B,Active,2026-10-24
+900517,Nadia Vargas,nadia.vargas@howard.edu,2025555566,2005-06-19,2025-07-17,Nursing,44,3.78,TX,77004,B,Active,2026-10-24
+900518,Ibrahim Kim,ibrahim.kim@howard.edu,2025553693,2008-08-27,2025-08-23,Undeclared,29,4.0,NC,27707,C,Active,2026-10-02
+900519,Ibrahim Silva,ibrahim.silva@howard.edu,2025552923,2005-12-27,2025-03-14,Undeclared,77,3.03,NY,10027,C,Active,2026-10-09
+900520,Jolene Brooks,jolene.brooks@howard.edu,2025558519,2006-10-29,2025-03-19,Mathematics,24,3.09,CA,90095,A,Active,2026-09-19
+900521,Priya Owens,priya.owens@howard.edu,2025550340,2008-02-23,2025-06-30,Engineering,41,2.34,DC,20059,C,Active,2026-10-18
+900522,Priya Yusuf,priya.yusuf@howard.edu,2025553945,2005-09-28,2025-08-11,Nursing,101,3.45,PA,19104,B,Active,2026-10-09
+900523,Nadia Moore,nadia.moore@howard.edu,2025558431,2009-12-22,2025-08-29,Nursing,64,3.31,PA,19104,A,Active,2026-10-20
+900524,Gabriel Ahmed,gabriel.ahmed@howard.edu,2025553245,2006-02-21,2025-04-07,Economics,105,3.67,PA,19104,B,Active,2026-10-21
+900525,Rosa Hayes,rosa.hayes@howard.edu,2025558475,2006-10-19,2025-05-07,Psychology,23,1.97,VA,22030,C,Active,2026-08-27
+900526,Rashid Nkemdirim,rashid.nkemdirim@howard.edu,2025558998,2005-08-14,2025-02-07,Biology,58,2.6,VA,22030,C,Active,2026-10-17
+900527,Paloma Patel,paloma.patel@howard.edu,2025554963,2006-08-08,2025-06-18,Engineering,101,1.37,NC,27707,B,Active,2026-10-03
+900528,Caleb Mensah,caleb.mensah@howard.edu,2025552220,2008-02-06,2025-04-07,Mathematics,111,1.84,NY,10027,A,Active,2026-09-05
+900529,Zola Brooks,zola.brooks@howard.edu,2025555789,2007-12-20,2025-07-13,Mathematics,37,2.38,NC,27707,A,Active,2026-10-18
+900530,Quincy Nkemdirim,quincy.nkemdirim@howard.edu,2025556086,2007-06-09,2025-05-22,Nursing,84,2.46,TX,77004,B,Active,2026-10-05
+900531,Paloma Patel,paloma.patel@howard.edu,2025558340,2007-02-28,2025-01-23,Biology,48,1.84,NC,27707,A,Active,2026-10-20
+900532,Noor Ahmed,noor.ahmed@howard.edu,2025555810,2008-08-27,2024-11-16,Nursing,41,2.47,CA,90095,B,Active,2026-10-18
+900533,Marcus Nguyen,marcus.nguyen@howard.edu,2025553220,2005-12-02,2025-08-15,Undeclared,113,4.0,PA,19104,B,Active,2026-09-30
+900534,Gabriel Nguyen,gabriel.nguyen@howard.edu,2025555631,2006-12-31,2024-09-29,Economics,92,3.19,NY,10027,B,Active,2026-10-08
+900535,Yara Zhang,yara.zhang@howard.edu,2025554610,2007-10-03,2024-08-23,Economics,111,3.07,NC,27707,A,Active,2026-10-17
+900536,Fatima Rivera,fatima.rivera@howard.edu,2025552483,2009-12-09,2024-10-09,Psychology,65,3.25,VA,22030,A,Active,2026-10-20
+900537,Kwame Silva,kwame.silva@howard.edu,2025559734,2006-07-30,2025-01-16,Mathematics,73,3.75,GA,30314,C,Active,2026-10-19
+900538,Imani Patel,imani.patel@howard.edu,2025552119,2009-09-28,2024-10-05,Engineering,46,3.2,IL,60637,C,Active,2026-10-26
+900539,Amara Silva,amara.silva@howard.edu,2025555867,2007-06-22,2025-02-23,Economics,35,3.01,GA,30314,C,Active,2026-09-28
+900540,Leila Brooks,leila.brooks@howard.edu,2025559921,2009-12-13,2025-01-14,Computer Science,96,2.72,NY,10027,B,Active,2026-10-10
+900541,Fatima Diallo,fatima.diallo@howard.edu,2025559524,2007-01-05,2025-05-07,Computer Science,41,2.61,DC,20059,B,Active,2026-10-24
+900542,Zola Dubois,zola.dubois@howard.edu,2025554564,2004-10-05,2025-09-24,Nursing,94,2.54,CA,90095,B,Active,2026-09-24
+900543,Jolene Owens,jolene.owens@howard.edu,2025551256,2009-02-12,2025-05-07,Undeclared,62,2.87,DC,20059,C,Active,2026-10-22
+900544,Nadia Walker,nadia.walker@howard.edu,2025552007,2005-12-05,2024-09-12,Mathematics,29,3.21,TX,77004,C,Active,2026-10-10
+900545,Marcus Ibrahim,marcus.ibrahim@howard.edu,2025557137,2004-10-25,2025-05-03,Undeclared,15,2.32,NC,27707,B,Active,2026-10-21
+900546,Paloma Lopez,paloma.lopez@howard.edu,2025552177,2004-10-13,2025-04-05,Computer Science,85,3.53,NC,27707,C,Active,2026-10-15
+900547,Elias Silva,elias.silva@howard.edu,2025552149,2008-10-23,2024-12-24,Psychology,83,2.69,CA,90095,A,Active,2026-10-22
+900548,Kwame Hayes,kwame.hayes@howard.edu,2025557849,2007-02-15,2025-05-22,Engineering,94,3.06,IL,60637,C,Active,2026-10-19
+900549,Hana Price,hana.price@howard.edu,2025558643,2008-09-03,2024-09-25,Computer Science,116,3.65,CA,90095,C,Active,2026-10-22
+900550,Imani Jackson,imani.jackson@howard.edu,2025558056,2007-11-24,2025-01-17,Economics,119,2.91,VA,22030,B,Active,2026-10-21
+900551,Imani Rivera,imani.rivera@howard.edu,2025551941,2004-12-15,2024-12-21,Engineering,11,3.0,NY,10027,B,Active,2026-10-08
+900552,Tariq Price,tariq.price@howard.edu,2025556032,2006-06-20,2024-09-17,Psychology,55,2.54,NC,27707,C,Active,2026-10-18
+900553,Caleb Osei,caleb.osei@howard.edu,2025553208,2008-06-15,2025-06-25,Nursing,68,2.95,TX,77004,A,Active,2026-10-20
+900554,Priya Mensah,priya.mensah@howard.edu,2025551402,2005-10-14,2024-08-20,Nursing,114,3.22,VA,22030,B,Active,2026-10-07
+900555,Paloma Kim,paloma.kim@howard.edu,2025552093,2009-06-05,2025-02-12,Psychology,21,3.61,DC,20059,C,Active,2026-10-20
+900556,Nadia Brooks,nadia.brooks@howard.edu,2025550375,2004-10-24,2024-10-23,Biology,27,2.66,TX,77004,A,Active,2026-10-07
+900557,Zola Yusuf,zola.yusuf@howard.edu,2025559465,2005-11-24,2024-12-13,Psychology,40,2.83,VA,22030,C,Active,2026-10-13
+900558,Rosa Lopez,rosa.lopez@howard.edu,2025551315,2006-08-30,2025-09-16,Nursing,94,3.96,IL,60637,C,Active,2026-10-24
+900559,Marcus Johnson,marcus.johnson@howard.edu,2025553538,2005-10-07,2025-05-02,Mathematics,101,3.17,VA,22030,C,Active,2026-10-03
+900560,Elias Rivera,elias.rivera@howard.edu,2025559556,2004-01-27,2025-05-09,Biology,100,2.01,CA,90095,A,Active,2026-10-07
+900561,Caleb Johnson,caleb.johnson@howard.edu,2025551125,2007-11-19,2025-07-11,Biology,22,3.58,GA,30314,B,Active,2026-10-18
+900562,Noor Brooks,noor.brooks@howard.edu,2025552029,2006-09-28,2025-08-16,Engineering,24,2.07,IL,60637,A,Active,2026-10-23
+900563,Elias Johnson,elias.johnson@howard.edu,2025550245,2007-04-05,2025-03-19,Psychology,85,3.13,PA,19104,C,Active,2026-10-20
+900564,Rosa Grant,rosa.grant@howard.edu,2025551905,2007-05-09,2024-09-25,Biology,87,2.73,PA,19104,A,Active,2026-10-03
+900565,Marcus Price,marcus.price@howard.edu,2025552406,2008-10-23,2024-10-25,Psychology,44,3.13,PA,19104,A,Active,2026-10-20
+900566,Priya Mensah,priya.mensah@howard.edu,2025550222,2009-10-16,2025-10-03,Biology,75,3.21,TX,77004,B,Active,2026-10-01
+900567,Kwame Kim,kwame.kim@howard.edu,2025559102,2008-12-22,2025-07-11,Computer Science,98,3.25,DC,20059,C,Active,2026-10-26
+900568,Paloma Zhang,paloma.zhang@howard.edu,2025550781,2008-12-19,2025-06-24,Mathematics,95,3.12,NC,27707,C,Active,2026-10-21
+900569,Amara Hayes,amara.hayes@howard.edu,2025553740,2007-02-17,2025-10-13,Engineering,113,2.39,NC,27707,C,Active,2026-10-07
+900570,Kwame Xu,kwame.xu@howard.edu,2025558250,2009-11-22,2025-05-24,Economics,107,2.05,VA,22030,A,Active,2026-10-23
+900571,Quincy Patel,quincy.patel@howard.edu,2025553355,2006-06-10,2025-04-25,Undeclared,27,2.78,NY,10027,C,Active,2026-10-20
+900572,Maya Jackson,maya.jackson@howard.edu,2025552248,2006-05-05,2025-01-09,Mathematics,80,3.32,DC,20059,A,Active,2026-10-09
+900573,Yara Johnson,yara.johnson@howard.edu,2025551782,2004-11-10,2025-04-10,Undeclared,5,3.13,NC,27707,A,Active,2026-09-13
+900574,Gabriel Xu,gabriel.xu@howard.edu,2025553259,2007-06-26,2025-07-14,Engineering,32,3.54,DC,20059,A,Active,2026-09-27
+900575,Kwame Osei,kwame.osei@howard.edu,2025553105,2004-10-04,2024-09-27,Mathematics,114,2.79,GA,30314,C,Active,2026-10-26
+900576,Danai Freeman,danai.freeman@howard.edu,2025555461,2006-10-31,2024-09-28,Undeclared,43,2.41,DC,20059,A,Active,2026-10-10
+900577,Priya Freeman,priya.freeman@howard.edu,2025559496,2007-11-26,2024-09-24,Biology,10,2.27,MD,20742,C,Active,2026-10-06
+900578,Jolene Grant,jolene.grant@howard.edu,2025550261,2009-01-13,2025-09-03,Nursing,120,3.01,PA,19104,C,Active,2026-09-28
+900579,Lamar Jackson,lamar.jackson@howard.edu,2025553138,2007-09-25,2025-04-16,Computer Science,108,3.6,NC,27707,B,Active,2026-10-10
+900580,Imani Ahmed,imani.ahmed@howard.edu,2025556757,2007-08-28,2025-08-06,Biology,113,2.92,NY,10027,B,Active,2026-10-18
+900581,Jolene Grant,jolene.grant@howard.edu,2025555349,2005-04-15,2024-08-24,Undeclared,72,3.79,DC,20059,B,Active,2026-10-27
+900582,Amara Zhang,amara.zhang@howard.edu,2025551810,2005-12-12,2024-12-11,Economics,99,4.0,VA,22030,C,Active,2026-10-18
+900583,Quincy Owens,quincy.owens@howard.edu,2025556340,2008-03-16,2025-02-18,Undeclared,71,3.19,PA,19104,C,Active,2026-10-18
+900584,Leila Kim,leila.kim@howard.edu,2025558557,2007-12-28,2025-09-16,Biology,20,4.0,PA,19104,B,Active,2026-10-26
+900585,Jolene Lopez,jolene.lopez@howard.edu,2025551276,2008-09-27,2025-04-12,Economics,26,1.65,DC,20059,C,Active,2026-10-17
+900586,Maya Nguyen,maya.nguyen@howard.edu,2025553746,2009-08-15,2025-04-18,Psychology,15,3.26,GA,30314,A,Active,2026-09-27
+900587,Lamar Mensah,lamar.mensah@howard.edu,2025556560,2005-10-27,2025-07-25,Biology,15,3.65,PA,19104,C,Active,2026-10-12
+900588,Lamar Castillo,lamar.castillo@howard.edu,2025556196,2009-12-20,2025-10-12,Undeclared,48,3.29,NC,27707,A,Active,2026-10-08
+900589,Hana Castillo,hana.castillo@howard.edu,2025553586,2007-09-24,2025-02-23,Biology,4,2.87,TX,77004,A,Active,2026-10-07
+900590,Zola Dubois,zola.dubois@howard.edu,2025558434,2007-07-21,2025-05-17,Psychology,30,3.42,NC,27707,B,Active,2026-10-22
+900591,Ibrahim Freeman,ibrahim.freeman@howard.edu,2025559473,2006-05-18,2025-07-18,Nursing,62,3.9,NY,10027,A,Active,2026-10-27
+900592,Zola Jackson,zola.jackson@howard.edu,2025551475,2009-08-11,2025-05-01,Economics,62,4.0,CA,90095,C,Active,2026-10-27
+900593,Maya Ahmed,maya.ahmed@howard.edu,2025555499,2006-02-07,2024-09-11,Nursing,23,4.0,VA,22030,C,Active,2026-09-30
+900594,Jolene Lopez,jolene.lopez@howard.edu,2025558523,2008-01-18,2024-12-03,Nursing,25,3.64,DC,20059,C,Active,2026-10-18
+900595,Rashid Ibrahim,rashid.ibrahim@howard.edu,2025556968,2007-09-02,2025-09-20,Psychology,105,2.25,CA,90095,B,Active,2026-10-06
+900596,Priya Brooks,priya.brooks@howard.edu,2025558955,2009-11-19,2025-05-08,Psychology,4,3.08,TX,77004,C,Active,2026-10-06
+900597,Paloma Ahmed,paloma.ahmed@howard.edu,2025552954,2005-06-07,2025-06-13,Computer Science,118,2.82,PA,19104,C,Active,2026-10-19
+900598,Keisha Diallo,keisha.diallo@howard.edu,2025553390,2004-02-06,2025-04-14,Engineering,8,3.58,NC,27707,A,Active,2026-10-26
+900599,Lamar Hayes,lamar.hayes@howard.edu,2025557393,2004-12-16,2024-09-22,Mathematics,74,2.95,DC,20059,C,Active,2026-10-13
