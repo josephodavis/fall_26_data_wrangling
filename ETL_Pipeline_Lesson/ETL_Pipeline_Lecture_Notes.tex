@@ -1,0 +1,568 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage[scaled=0.88]{helvet}
+\usepackage{courier}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage{needspace}
+\usepackage{titlesec}
+\usepackage[table]{xcolor}
+\usepackage[hidelinks]{hyperref}
+\tcbuselibrary{skins,breakable}
+
+\usepackage[letterpaper,top=1.0in,bottom=1.0in,left=1.1in,right=1.1in,
+            headheight=15pt,footskip=0.5in]{geometry}
+
+% ------------------------------------------------------------------ colour
+\definecolor{accent}{HTML}{EB6834}
+\definecolor{cool}{HTML}{2A78D6}
+\definecolor{ink}{HTML}{1B1B1B}
+\definecolor{muted}{HTML}{898781}
+\definecolor{good}{HTML}{1C7C54}
+\definecolor{rule}{HTML}{D8D6D1}
+
+% ------------------------------------------------------------------ headings
+\titleformat{\section}{\sffamily\large\bfseries\color{ink}}{\thesection.}{0.6em}{}
+\titleformat{\subsection}{\sffamily\small\bfseries\color{muted}}{}{0em}{}
+\titlespacing*{\section}{0pt}{22pt plus 4pt minus 2pt}{8pt}
+\titlespacing*{\subsection}{0pt}{12pt plus 3pt minus 2pt}{4pt}
+
+\setlist[itemize]{itemsep=3pt,topsep=4pt,parsep=0pt,leftmargin=1.4em}
+\setlist[enumerate]{itemsep=3pt,topsep=4pt,parsep=0pt,leftmargin=1.6em}
+\setlength{\parskip}{5pt}
+\setlength{\parindent}{0pt}
+
+% ------------------------------------------------------------------ header
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\color{rule}\hrule height 0.4pt}
+\fancyhead[L]{\sffamily\scriptsize\color{muted}MATH 153 \textemdash{} Data Wrangling / Data Engineering}
+\fancyhead[R]{\sffamily\scriptsize\color{muted}Building a Simple ETL Pipeline}
+\fancyfoot[C]{\sffamily\scriptsize\color{muted}\thepage}
+
+% ------------------------------------------------------------------ code
+\lstdefinestyle{py}{
+  language=Python,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{accent},
+  stringstyle=\color{good},
+  commentstyle=\color{muted}\itshape,
+  showstringspaces=false,
+  breaklines=true,
+  frame=leftline,
+  framesep=7pt,
+  rulecolor=\color{rule},
+  aboveskip=8pt,
+  belowskip=6pt,
+  xleftmargin=10pt,
+}
+\lstset{style=py}
+\lstdefinestyle{sql}{language=SQL,morekeywords={NOT,EXISTS,IN,LEFT,JOIN,HAVING,PRAGMA}}
+
+\newcommand{\py}[1]{{\ttfamily\small#1}}
+
+% ------------------------------------------------------------------ boxes
+\newtcolorbox{ask}[1][]{
+  enhanced, breakable, colback=accent!5, colframe=accent,
+  boxrule=0pt, leftrule=3pt, arc=1pt,
+  left=10pt, right=10pt, top=7pt, bottom=7pt,
+  fonttitle=\sffamily\bfseries\footnotesize, #1}
+
+\newtcolorbox{trap}[1][]{
+  enhanced, breakable, colback=muted!7, colframe=muted,
+  boxrule=0pt, leftrule=2.5pt, arc=1pt,
+  left=9pt, right=9pt, top=6pt, bottom=6pt,
+  fonttitle=\sffamily\bfseries\footnotesize, title={Watch out}, #1}
+
+\newtcolorbox{lesson}[1][]{
+  enhanced, breakable, colback=good!5, colframe=good,
+  boxrule=0pt, leftrule=2.5pt, arc=1pt,
+  left=9pt, right=9pt, top=6pt, bottom=6pt,
+  fonttitle=\sffamily\bfseries\footnotesize, title={Remember}, #1}
+
+\newtcolorbox{keynote}[1][]{
+  enhanced, breakable, colback=cool!4, colframe=cool,
+  boxrule=0pt, leftrule=2.5pt, arc=1pt,
+  left=9pt, right=9pt, top=6pt, bottom=6pt, #1}
+
+\newcommand{\tests}[1]{{\sffamily\footnotesize\color{muted}\textbf{Probes:} #1}\par\vspace{2pt}}
+\newcommand{\ans}{\subsection{The answer}}
+
+% --- extra boxes for this handout
+\newtcolorbox{greenbox}[1][]{
+  enhanced, breakable, colback=good!5, colframe=good,
+  boxrule=0pt, leftrule=2.5pt, arc=1pt,
+  left=9pt, right=9pt, top=6pt, bottom=6pt,
+  fonttitle=\sffamily\bfseries\footnotesize, title={Remember}, #1}
+
+\newtcolorbox{greybox}[1][]{
+  enhanced, breakable, colback=muted!7, colframe=muted,
+  boxrule=0pt, leftrule=2.5pt, arc=1pt,
+  left=9pt, right=9pt, top=6pt, bottom=6pt, #1}
+\begin{document}
+
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{ink} Building a Simple ETL Pipeline}\\[4pt]
+  {\sffamily\large\color{accent} Components of Data Pipelines}\\[9pt]
+  {\sffamily\small\color{muted} MATH 153 \textbar{} Data Wrangling / Data Engineering
+   \textbar{} Howard University, Department of Mathematics}\\[2pt]
+  {\sffamily\small\color{muted} Moussa Doumbia, Ph.D.}
+\end{center}
+
+\vspace{6pt}
+\color{rule}\hrule height 0.4pt\color{ink}
+\vspace{8pt}
+
+{\sffamily\small\color{muted}\textbf{Files for this lesson}}
+
+{\sffamily\footnotesize
+\begin{tabular}{@{}p{6.1cm}p{7.8cm}@{}}
+\py{ETL\_Pipeline\_Lecture.ipynb} & the worked example, ready to run \\
+\py{ETL\_Activity.ipynb}         & the in-class activity (with blanks to fill in) \\
+\py{ETL\_Activity\_SOLUTIONS.ipynb} & the answer key \\
+\py{data/}                       & caf\'e sales: 3 daily files + \py{menu.csv} \\
+\py{activity\_data/}             & library checkouts: 3 daily files + \py{books.csv} \\
+\end{tabular}}
+
+% ==================================================================
+\section{What is a data pipeline?}
+
+\begin{keynote}
+A \textbf{data pipeline} is a series of steps that moves data from where it \emph{is} to where it is
+\emph{useful}, doing the same thing every time it runs.
+\end{keynote}
+
+The important words are \textbf{every time it runs}. A notebook you run once by hand is an analysis.
+A pipeline runs tomorrow, and next Tuesday, without you.
+
+\subsection{The five components}
+
+{\sffamily\footnotesize
+\begin{tabular}{@{}p{0.5cm}p{2.3cm}p{5.0cm}p{5.4cm}@{}}
+\toprule
+\textbf{\#} & \textbf{Component} & \textbf{What it means} & \textbf{In our example} \\
+\midrule
+1 & \textbf{Source}    & where the data comes from       & 3 daily CSV files from the caf\'e till \\
+2 & \textbf{Extract}   & read it in                      & \py{pd.read\_csv} \\
+3 & \textbf{Transform} & make it usable                  & fix prices, fix names, join the menu \\
+4 & \textbf{Load}      & put it where people will use it & a SQLite table + a summary CSV \\
+5 & \textbf{Schedule}  & decide when it runs             & every morning at 6 a.m. \\
+\bottomrule
+\end{tabular}}
+
+\vspace{6pt}
+Steps 2, 3 and 4 are so common that they have a name of their own: \textbf{ETL}.
+
+\begin{lstlisting}[language=]
+ SOURCE      EXTRACT     TRANSFORM      LOAD       SCHEDULE
+ 3 CSVs  --> read    --> clean+join --> cafe.db <-- daily
+ + menu                                 summary     6 a.m.
+\end{lstlisting}
+
+\subsection{ETL in one sentence each}
+
+\begin{itemize}
+  \item \textbf{Extract} \textemdash{} get the raw data, \emph{without changing it}.
+  \item \textbf{Transform} \textemdash{} clean it, reshape it, combine it, calculate from it.
+  \item \textbf{Load} \textemdash{} write the result somewhere other people can read.
+\end{itemize}
+
+\begin{greybox}
+\small
+You will also hear \textbf{ELT}: load the raw data into the database first, and transform it later
+\emph{inside} the database. Same three letters, different order. ELT suits very large data and
+powerful warehouses; ETL suits what we are doing today.
+\end{greybox}
+
+% ==================================================================
+\section{The worked example: Bison Caf\'e sales}
+
+The caf\'e sends one sales file per day. We have three days. We want a clean table and a daily
+revenue report.
+
+\subsection{Look at the data first}
+
+\emph{Never write a pipeline for data you have not looked at.}
+
+\begin{lstlisting}[language=]
+sale_id,sale_date,sale_time,item,qty,unit_price
+S-5001,2027-03-02,14:32,FRUIT CUP,2,$4.00
+S-5002,2027-03-02,15:22,Turkey Wrap,2,$7.50
+S-5004,2027-03-02,11:58,latte,3,$4.25
+\end{lstlisting}
+
+Two things are already wrong, and both are normal:
+
+\begin{enumerate}
+  \item \py{unit\_price} \textbf{is text, not a number}. It says \py{\$4.25}. You cannot multiply by
+        \py{\$4.25}.
+  \item \py{item} \textbf{is spelled inconsistently} \textemdash{} \py{FRUIT CUP}, \py{latte},
+        \py{"  Bagel "} \textemdash{} because the till lets staff type it by hand.
+\end{enumerate}
+
+Fixing those two things is what ``Transform'' will mean today. There is also a reference table,
+\py{menu.csv}, giving each item's category.
+
+\subsection{E \textemdash{} Extract}
+
+Read the raw files. Change nothing.
+
+\begin{lstlisting}
+def extract(data_dir):
+    """Read every daily sales file and stack them into one DataFrame."""
+    files = sorted(data_dir.glob("sales_2027-*.csv"))
+    frames = [pd.read_csv(f) for f in files]
+    return pd.concat(frames, ignore_index=True)
+
+raw = extract(DATA)        # 107 rows from 3 files
+\end{lstlisting}
+
+\begin{greenbox}[title={Remember}]
+\small
+\textbf{Extract is deliberately boring.} Keeping the raw data untouched means that when something goes
+wrong later, you know where to start again. \py{ignore\_index=True} renumbers the stacked rows
+0, 1, 2, \ldots{} so you do not end up with three rows all numbered 0.
+\end{greenbox}
+
+\subsection{T \textemdash{} Transform}
+
+Four small steps.
+
+\vspace{4pt}
+\textbf{Step 1 \textemdash{} make the price a number.}
+\begin{lstlisting}
+df["unit_price"] = df["unit_price"].str.replace("$", "", regex=False).astype(float)
+\end{lstlisting}
+
+\textbf{Step 2 \textemdash{} make the date a real date.}
+\begin{lstlisting}
+df["sale_date"] = pd.to_datetime(df["sale_date"], format="%Y-%m-%d")
+\end{lstlisting}
+
+A date stored as text is just a string \textemdash{} you cannot sort it reliably, subtract it, or ask
+what day of the week it was.
+
+\textbf{Step 3 \textemdash{} clean the item names.}
+\begin{lstlisting}
+df["item"] = df["item"].str.strip().str.title()
+\end{lstlisting}
+
+\begin{lstlisting}[language=]
+distinct spellings before: 29
+distinct item names after:  8
+\end{lstlisting}
+
+\py{.str.strip()} removes spaces at the ends; \py{.str.title()} capitalises each word, so
+\py{"LATTE"} and \py{"latte"} both become \py{"Latte"}.
+
+\textbf{Step 4 \textemdash{} join the menu, then calculate.}
+\begin{lstlisting}
+df = df.merge(menu, on="item", how="left")
+df["revenue"] = (df["qty"] * df["unit_price"]).round(2)
+\end{lstlisting}
+
+\begin{trap}
+\small
+\textbf{Step 3 had to come before step 4.} \py{"latte"} would not have matched \py{"Latte"} in the
+menu, that sale would have had no category, and its revenue would have quietly vanished from the
+report.
+\end{trap}
+
+\begin{greenbox}[title={Two checks to make after every join}]
+\small
+\textbf{Did the row count stay the same?} 107 in, 107 out. If it grew, the reference table has
+duplicate rows and every sale got counted twice.
+
+\medskip
+\textbf{Did anything fail to match?} Zero unmatched here. A blank category means a spelling your
+cleaning step missed.
+\end{greenbox}
+
+\subsection{L \textemdash{} Load}
+
+Two outputs, for two audiences: a \textbf{database table} for anyone who wants to query it, and a
+\textbf{summary CSV} for the manager who just wants the daily numbers.
+
+\begin{lstlisting}
+con = sqlite3.connect("cafe.db")
+out.to_sql("sales", con, if_exists="replace", index=False)
+con.close()
+summary.to_csv("daily_summary.csv", index=False)
+\end{lstlisting}
+
+The result, from 107 sales over three days:
+
+{\sffamily\footnotesize
+\begin{tabular}{@{}llrr@{}}
+\toprule
+\textbf{sale\_date} & \textbf{category} & \textbf{items\_sold} & \textbf{revenue} \\
+\midrule
+2027-03-02 & Drink & 35 & \$119.75 \\
+2027-03-02 & Food  & 40 & \$222.85 \\
+2027-03-03 & Drink & 48 & \$162.80 \\
+2027-03-03 & Food  & 29 & \$112.40 \\
+2027-03-04 & Drink & 39 & \$124.30 \\
+2027-03-04 & Food  & 29 & \$126.25 \\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{Total}} & \textbf{\$868.35} \\
+\bottomrule
+\end{tabular}}
+
+% ==================================================================
+\section{The whole pipeline, in one function}
+
+Everything above, in twelve lines. \textbf{This is the deliverable} \textemdash{} not the notebook,
+the function.
+
+\begin{lstlisting}
+def run_pipeline(data_dir=DATA, db_path="cafe.db", csv_path="daily_summary.csv"):
+    """Extract -> Transform -> Load. Run this every morning."""
+    menu  = pd.read_csv(data_dir / "menu.csv")
+
+    raw   = extract(data_dir)                       # E
+    clean = transform(raw, menu)                    # T
+
+    assert clean["category"].notna().all(), "some items did not match the menu"
+    assert (clean["revenue"] > 0).all(),    "a sale has zero or negative revenue"
+
+    summary = (clean
+               .assign(day=clean["sale_date"].dt.date)
+               .groupby(["day", "category"], as_index=False)
+               .agg(items_sold=("qty", "sum"), revenue=("revenue", "sum"))
+               .rename(columns={"day": "sale_date"}))
+
+    load(clean, summary, db_path, csv_path)         # L
+    return clean, summary
+\end{lstlisting}
+
+\begin{greenbox}[title={Why a function, and not just cells?}]
+\small
+\textbf{It has a name.} You can tell someone ``run \py{run\_pipeline()}'' instead of ``open the
+notebook and run cells 4 through 19 but not cell 12''.
+
+\medskip
+\textbf{It takes arguments.} Point it at a different folder and it works on different data.
+
+\medskip
+\textbf{It can be scheduled.} A computer can call a function at 6 a.m. It cannot click through a
+notebook.
+\end{greenbox}
+
+% ==================================================================
+\section{Two things every pipeline needs}
+
+\subsection{Run it twice}
+
+\begin{lstlisting}[language=]
+run_pipeline()
+run_pipeline()          # on purpose
+
+rows in the sales table: 107        <-- not 214
+\end{lstlisting}
+
+Running it twice gave the same answer as running it once. That property has a name: the pipeline is
+\textbf{idempotent}. One keyword gives it to us \textemdash{} \py{if\_exists="replace"} throws away
+the old table and writes a fresh one each run.
+
+\begin{trap}
+\small
+\textbf{The most common bug in a first pipeline.}
+\begin{lstlisting}
+out.to_sql("sales", con, if_exists="append", index=False)   # DON'T
+\end{lstlisting}
+With \py{append}, every run adds another copy. Run it three times and the caf\'e has sold everything
+three times.
+\end{trap}
+
+\subsection{A log line per step}
+
+\begin{lstlisting}[language=]
+  EXTRACT    107 rows read
+  TRANSFORM  107 rows cleaned, 8 distinct items
+  LOAD       107 rows written, revenue $868.35
+\end{lstlisting}
+
+Three \py{print} statements. Now when the job runs at 6 a.m. and something looks odd, you can see
+\emph{which step} the rows disappeared at instead of guessing.
+
+\subsection{A check before you publish}
+
+An \textbf{assertion} is a sentence that must be true. If it is not, Python stops immediately and
+tells you why.
+
+\begin{lstlisting}
+assert clean["category"].notna().all(), "some items did not match the menu"
+assert (clean["revenue"] > 0).all(),    "a sale has zero or negative revenue"
+\end{lstlisting}
+
+\begin{greenbox}[title={Where the checks go}]
+\small
+\textbf{Between Transform and Load.} That is the last moment before the numbers reach somebody else.
+If a check fails, the pipeline stops \emph{before} writing to the database, and the manager's report
+is still yesterday's \textemdash{} which is correct, and much better than today's report being wrong.
+\end{greenbox}
+
+% ==================================================================
+\section{The same thing in SQL}
+
+Once the data is in the database, the summary is one query.
+
+\begin{lstlisting}[style=sql]
+SELECT sale_date, category,
+       SUM(qty)               AS items_sold,
+       ROUND(SUM(revenue), 2) AS revenue
+FROM   sales
+GROUP  BY sale_date, category
+ORDER  BY sale_date, category;
+\end{lstlisting}
+
+{\sffamily\footnotesize
+\begin{tabular}{@{}p{6.4cm}p{6.4cm}@{}}
+\toprule
+\textbf{Use pandas when} & \textbf{Use SQL when} \\
+\midrule
+reading files and cleaning text       & the data is already in a database \\
+the step is awkward to express in SQL & the data is too big for memory \\
+you are still exploring               & the question is a standard group-and-total \\
+\bottomrule
+\end{tabular}}
+
+\vspace{4pt}
+Most real pipelines use both: pandas to clean and load, SQL to query afterwards. That is exactly what
+we did.
+
+% ==================================================================
+\section{Five things to remember}
+
+\begin{enumerate}
+  \item \textbf{Extract changes nothing.} Keep the raw data raw, so you can always start over.
+  \item \textbf{Clean before you join.} \py{"latte"} does not match \py{"Latte"}.
+  \item \textbf{Check the row count after every join.} Same number in, same number out.
+  \item \textbf{Make it runnable twice.} \py{if\_exists="replace"}, not \py{"append"}.
+  \item \textbf{Put the checks between Transform and Load} \textemdash{} the last moment before the
+        numbers reach somebody else.
+\end{enumerate}
+
+\begin{keynote}
+A pipeline is just \textbf{three functions and a schedule}. The difference between a pipeline and a
+notebook is that somebody else can run it.
+\end{keynote}
+
+% ==================================================================
+\newpage
+\section{In-class activity: build a basic data pipeline}
+
+{\sffamily\small\color{muted}\textbf{Notebook:} \py{ETL\_Activity.ipynb} \textbullet{}
+\textbf{Work in pairs} \textbullet{} \textbf{About 35 minutes}}
+
+\subsection*{\sffamily The situation}
+
+Founders Library records every book checkout and sends the circulation office \textbf{one file per
+day}. Three days have arrived. The office wants a clean table they can query, plus a daily summary of
+how many books went out by genre.
+
+\textbf{Your job: build the ETL pipeline.} Same five components as the caf\'e example \textemdash{}
+only the data is different.
+
+{\sffamily\footnotesize
+\begin{tabular}{@{}p{2.2cm}p{11.5cm}@{}}
+\toprule
+\textbf{Source}    & \py{activity\_data/checkouts\_2027-03-0\{2,3,4\}.csv} and \py{books.csv} \\
+\textbf{Extract}   & read the three daily files and stack them \\
+\textbf{Transform} & fix \py{loan\_days}, clean \py{patron\_type}, join \py{books}, add a due date \\
+\textbf{Load}      & write to \py{library.db} and \py{checkout\_summary.csv} \\
+\textbf{Schedule}  & (we will just talk about this one) \\
+\bottomrule
+\end{tabular}}
+
+\subsection*{\sffamily The tasks}
+
+{\sffamily\footnotesize
+\begin{tabular}{@{}p{0.7cm}p{1.1cm}p{5.6cm}p{5.6cm}@{}}
+\toprule
+\textbf{\#} & \textbf{Time} & \textbf{Task} & \textbf{Expected result} \\
+\midrule
+1 & 5 min & \textbf{Extract} \textemdash{} write a function that reads all three daily files and
+                stacks them & 82 rows \\
+2 & 5 min & \textbf{Transform 1} \textemdash{} turn \py{"14 days"} into the number \py{14};
+                convert \py{checkout\_date} to a datetime & dtype \py{int64}, not \py{object} \\
+3 & 5 min & \textbf{Transform 2} \textemdash{} make \py{patron\_type} consistent
+            & \textbf{16 spellings become 4} \\
+4 & 7 min & \textbf{Transform 3} \textemdash{} left-join \py{books} on \py{book\_id}; compute
+                \py{due\_date = checkout\_date + loan\_days} & still 82 rows, 0 unmatched \\
+5 & 6 min & \textbf{Load} \textemdash{} build the daily summary; write to \py{library.db} and a CSV
+            & 82 rows loaded \\
+6 & 8 min & \textbf{Put it together} \textemdash{} one \py{run\_pipeline()} function, a log line per
+                step, and \textbf{two assertions} between Transform and Load & runs twice, still 82
+                rows \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Bonus:} query the database \textemdash{} which genre was checked out
+                      most? How many checkouts per patron type?} \\
+\bottomrule
+\end{tabular}}
+
+\subsection*{\sffamily What to look for while they work}
+
+\begin{trap}
+\small
+\textbf{Task 3 before Task 4.} A pair who joins first and cleans second will get the right row count
+and the wrong idea. Ask them: \emph{``why did this step have to come before the join?''}
+\end{trap}
+
+\begin{trap}
+\small
+\textbf{Task 6, running it twice.} A pair who used \py{if\_exists="append"} will see
+\textbf{246 rows} instead of 82. This is the single most valuable mistake in the activity
+\textemdash{} let them find it, then ask what the library director would conclude from a report
+saying the collection circulated three times over.
+\end{trap}
+
+\begin{trap}
+\small
+\textbf{\py{pd.to\_timedelta} needs a unit.} For the due date:
+\py{pd.to\_timedelta(df["loan\_days"], unit="D")}. Without \py{unit="D"} it will not know whether
+you meant days, hours or nanoseconds.
+\end{trap}
+
+\subsection*{\sffamily Three questions to close on}
+
+\begin{enumerate}
+  \item \textbf{Scheduling.} Your pipeline reads every file in the folder. Tomorrow a fourth file
+        arrives. What happens when you run \py{run\_pipeline()} again \textemdash{} and is that what
+        you want?
+  \item \textbf{Where checks belong.} You put two assertions between Transform and Load. What would
+        go wrong if you put them at the very end, after \py{load()} had already run?
+  \item \textbf{One thing you would add.} You have a working pipeline. Name one thing it still needs
+        before you would be comfortable letting it run unattended every morning.
+\end{enumerate}
+
+\vspace{6pt}
+\begin{keynote}
+\small
+\textbf{What they built:}
+\py{extract()} \(\rightarrow\) transform \(\rightarrow\) \py{assert} \(\rightarrow\) \py{load()}
+\textemdash{} 82 rows, 2 checks, and a result somebody else can use. Four functions and two checks.
+That is a data pipeline.
+\end{keynote}
+
+\vspace{8pt}
+\color{rule}\hrule height 0.4pt\color{ink}
+\vspace{4pt}
+
+{\sffamily\footnotesize\color{muted}
+Every figure in this document is produced by the accompanying notebooks, which run top to bottom from
+a clean kernel. The data are synthetic, generated by \py{make\_data.py} with a fixed seed, and
+describe no real caf\'e, library or patron.}
+
+\end{document}

@@ -1,0 +1,735 @@
+\documentclass[aspectratio=169,10pt]{beamer}
+
+% ------------------------------------------------------------------ theme
+\usetheme[progressbar=frametitle,block=fill]{metropolis}
+\usefonttheme{professionalfonts}
+\usepackage[scaled=0.92]{helvet}
+\usepackage{courier}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{tcolorbox}
+\usepackage{appendixnumberbeamer}
+\tcbuselibrary{skins,breakable}
+
+% ------------------------------------------------------------------ colour
+\definecolor{accent}{HTML}{EB6834}
+\definecolor{cool}{HTML}{2A78D6}
+\definecolor{ink}{HTML}{1B1B1B}
+\definecolor{paper}{HTML}{FCFCFB}
+\definecolor{muted}{HTML}{898781}
+\definecolor{good}{HTML}{1C7C54}
+
+\setbeamercolor{normal text}{fg=ink,bg=paper}
+\setbeamercolor{alerted text}{fg=accent}
+\setbeamercolor{example text}{fg=cool}
+\setbeamercolor{frametitle}{bg=ink,fg=paper}
+\setbeamercolor{progress bar}{fg=accent,bg=muted!30}
+\setbeamercolor{title separator}{fg=accent}
+\setbeamercolor{structure}{fg=accent}
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamerfont{frametitle}{size=\large}
+\metroset{numbering=fraction}
+
+% ------------------------------------------------------------------ navigation
+% Clickable section strip in the footer, plus a link back to the contents.
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=accent, urlcolor=cool,
+            pdfstartview={Fit}, bookmarksopen=true}
+
+\setbeamercolor{section in head/foot}{fg=muted,bg=paper}
+\setbeamercolor{section in head/foot shaded}{fg=muted!60,bg=paper}
+\setbeamerfont{section in head/foot}{size=\tiny}
+
+\newcommand{\navbutton}[2]{%
+  \hyperlink{#1}{\tiny\color{muted}\textsf{#2}}}
+
+\newcommand{\navitem}[3]{%
+  \hyperlink{#1}{%
+    \ifnum\insertsectionnumber=#2\color{accent}\else\color{muted!75}\fi
+    \textsf{#3}}}
+
+\newcommand{\secnav}{%
+  \navitem{sec1}{1}{1\,Components}\hspace{0.7em}%
+  \navitem{sec2}{2}{2\,Extract}\hspace{0.7em}%
+  \navitem{sec3}{3}{3\,Transform}\hspace{0.7em}%
+  \navitem{sec4}{4}{4\,Load}\hspace{0.7em}%
+  \navitem{sec5}{5}{5\,One\,function}\hspace{0.7em}%
+  \navitem{sec6}{6}{6\,Protect\,it}}
+
+\makeatletter
+\setbeamertemplate{footline}{%
+  \hbox{%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=2.8ex,dp=1.6ex,%
+      leftskip=1.1em,rightskip=1.1em]{}%
+      \tiny%
+      \navbutton{toc}{Contents}\hspace{1.2em}%
+      \secnav%
+      \hfill\color{muted}\insertframenumber/\inserttotalframenumber%
+    \end{beamercolorbox}%
+  }%
+}
+\makeatother
+
+% Every section opens with its own slide, which doubles as a link target.
+\AtBeginSection[]{%
+  \begin{frame}[plain,noframenumbering]
+    \hypertarget{sec\arabic{section}}{}%
+    \sectionpage
+  \end{frame}%
+}
+\metroset{numbering=none}
+
+% A prompt that asks the room to answer before the next click.
+\newtcolorbox{ask}[1][]{
+  enhanced, breakable, colback=good!6, colframe=good,
+  boxrule=0pt, leftrule=2.5pt, arc=1pt, left=6pt, right=6pt, top=4pt, bottom=4pt,
+  fonttitle=\bfseries\footnotesize, title={Before the next click}, #1}
+
+
+% ------------------------------------------------------------------ code
+\lstdefinestyle{py}{
+  language=Python,
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\color{accent}\bfseries,
+  stringstyle=\color{good},
+  commentstyle=\color{muted}\itshape,
+  showstringspaces=false,
+  breaklines=true,
+  frame=none,
+  aboveskip=4pt,
+  belowskip=2pt,
+  numbers=none,
+  xleftmargin=2pt,
+}
+\lstset{style=py}
+
+% Inline code. (\lstinline cannot be used inside a macro argument,
+% so inline snippets use a plain typewriter face instead.)
+\newcommand{\py}[1]{{\ttfamily\footnotesize\color{ink}#1}}
+\newcommand{\Out}{\vspace{-2pt}\textcolor{muted}{\scriptsize\textsf{Output}}\vspace{-4pt}}
+
+% ------------------------------------------------------------------ boxes
+\newtcolorbox{defn}[1][]{
+  enhanced, breakable, colback=cool!5, colframe=cool,
+  boxrule=0pt, leftrule=2.5pt, arc=1pt, left=6pt, right=6pt, top=4pt, bottom=4pt,
+  fonttitle=\bfseries\footnotesize, title={Definition}, #1}
+
+\newtcolorbox{exmp}[1][]{
+  enhanced, breakable, colback=accent!5, colframe=accent,
+  boxrule=0pt, leftrule=2.5pt, arc=1pt, left=6pt, right=6pt, top=4pt, bottom=4pt,
+  fonttitle=\bfseries\footnotesize, title={Example}, #1}
+
+\newtcolorbox{aside}[1][]{
+  enhanced, breakable, colback=muted!8, colframe=muted,
+  boxrule=0pt, leftrule=2.5pt, arc=1pt, left=6pt, right=6pt, top=4pt, bottom=4pt, #1}
+
+% ------------------------------------------------------------------ title
+\title{Building a Simple ETL Pipeline}
+\subtitle{Components of data pipelines \textperiodcentered{} Extract, Transform, Load
+          \textperiodcentered{} Making it run again tomorrow}
+\date{}
+\author{Moussa Doumbia, Ph.D.\\[2pt]
+        {\small Expert in DS, ML \& AI}\\[1pt]
+        {\small Department of Mathematics}\\[1pt]
+        {\small Howard University}}
+\institute{MATH 153 \textemdash{} Data Wrangling / Data Engineering}
+
+\newtcolorbox{prac}[1][]{
+  enhanced, colback=good!6, colframe=good,
+  boxrule=0pt, leftrule=2.5pt, arc=1pt, left=6pt, right=6pt, top=4pt, bottom=4pt,
+  coltext=ink, fonttitle=\bfseries\footnotesize, title={In practice}, #1}
+
+\newtcolorbox{watch}[1][]{
+  enhanced, colback=accent!7, colframe=accent,
+  boxrule=0pt, leftrule=2.5pt, arc=1pt, left=6pt, right=6pt, top=4pt, bottom=4pt,
+  coltext=ink, fonttitle=\bfseries\footnotesize, title={Watch out}, #1}
+\begin{document}
+
+\maketitle
+
+% ==================================================================
+\begin{frame}{Today}
+  \hypertarget{toc}{}%
+  \tableofcontents
+\end{frame}
+
+% ==================================================================
+\section{What a pipeline is}
+
+\begin{frame}{The job}
+  \begin{itemize}[<+->]
+    \item The Bison Caf\'e sends us \textbf{one sales file per day}.
+    \item We have three days.
+    \item We want a clean table, and a daily revenue report.
+  \end{itemize}
+
+  \pause\vfill
+  \begin{aside}
+    \small
+    And we want it to work again tomorrow, \emph{without us}.
+  \end{aside}
+\end{frame}
+
+% ==================================================================
+\begin{frame}{Definition}
+  \begin{defn}
+    A \textbf{data pipeline} is a series of steps that moves data from where it \emph{is} to where it
+    is \emph{useful}, doing the same thing every time it runs.
+  \end{defn}
+
+  \pause
+  \begin{itemize}[<+->]
+    \item The important words are \alert{every time it runs}.
+    \item A notebook you run once by hand is an \textbf{analysis}.
+    \item A pipeline runs tomorrow, and next Tuesday, without you.
+  \end{itemize}
+\end{frame}
+
+% ==================================================================
+\begin{frame}{The five components}
+  \small
+  \begin{tabular}{@{}p{0.4cm}p{2.4cm}p{4.3cm}p{5.1cm}@{}}
+    \toprule
+    \textbf{\#} & \textbf{Component} & \textbf{What it means} & \textbf{In our example} \\
+    \midrule
+    \onslide<+->{1} & \onslide<.->{\textbf{Source}}
+       & \onslide<.->{where the data comes from} & \onslide<.->{3 daily CSVs from the till} \\[2pt]
+    \onslide<+->{2} & \onslide<.->{\textbf{Extract}}
+       & \onslide<.->{read it in} & \onslide<.->{\py{pd.read\_csv}} \\[2pt]
+    \onslide<+->{3} & \onslide<.->{\textbf{Transform}}
+       & \onslide<.->{make it usable} & \onslide<.->{fix prices, fix names, join the menu} \\[2pt]
+    \onslide<+->{4} & \onslide<.->{\textbf{Load}}
+       & \onslide<.->{put it where people will use it} & \onslide<.->{a SQLite table + a summary CSV} \\[2pt]
+    \onslide<+->{5} & \onslide<.->{\textbf{Schedule}}
+       & \onslide<.->{decide when it runs} & \onslide<.->{every morning at 6 a.m.} \\
+    \bottomrule
+  \end{tabular}
+
+  \onslide<6->{\vfill
+  \begin{aside}
+    \small
+    Steps 2, 3 and 4 are so common they have a name of their own: \alert{ETL}.
+  \end{aside}}
+\end{frame}
+
+% ==================================================================
+\begin{frame}[fragile]{E \textemdash{} T \textemdash{} L}
+\begin{lstlisting}[language=,basicstyle=\ttfamily\scriptsize]
+ SOURCE      EXTRACT     TRANSFORM      LOAD       SCHEDULE
+ 3 CSVs  --> read    --> clean+join --> cafe.db <-- daily
+ + menu                                 summary     6 a.m.
+\end{lstlisting}
+
+  \pause
+  \begin{itemize}[<+->]
+    \item \textbf{Extract} \textemdash{} get the raw data, \emph{without changing it}.
+    \item \textbf{Transform} \textemdash{} clean it, reshape it, combine it, calculate from it.
+    \item \textbf{Load} \textemdash{} write the result somewhere other people can read.
+  \end{itemize}
+\end{frame}
+
+% ==================================================================
+\begin{frame}{ETL or ELT?}
+  \begin{itemize}[<+->]
+    \item \textbf{ETL} \textemdash{} transform first, then load the clean result.
+    \item \textbf{ELT} \textemdash{} load the raw data first, transform it \emph{inside} the database.
+  \end{itemize}
+
+  \pause\vfill
+  \begin{aside}
+    \small
+    Same three letters, different order. ELT suits very large data and powerful warehouses.
+    ETL suits what we are doing today.
+  \end{aside}
+\end{frame}
+
+% ==================================================================
+\section{Extract}
+
+\begin{frame}[fragile]{Look at the data first}
+\begin{lstlisting}[language=]
+sale_id,sale_date,sale_time,item,qty,unit_price
+S-5001,2027-03-02,14:32,FRUIT CUP,2,$4.00
+S-5002,2027-03-02,15:22,Turkey Wrap,2,$7.50
+S-5004,2027-03-02,11:58,latte,3,$4.25
+\end{lstlisting}
+
+  \pause
+  \begin{ask}
+    \small
+    Two things in this file are already wrong. What are they?
+  \end{ask}
+\end{frame}
+
+% ==================================================================
+\begin{frame}{Two problems, both normal}
+  \begin{itemize}[<+->]
+    \item \py{unit\_price} \textbf{is text, not a number}. It says \py{\$4.25}.
+    \item You cannot multiply by \py{\$4.25}.
+    \item \py{item} \textbf{is spelled inconsistently} \textemdash{} \py{FRUIT CUP}, \py{latte},
+          \py{"  Bagel "}.
+    \item The till lets staff type it by hand.
+  \end{itemize}
+
+  \pause\vfill
+  \begin{aside}
+    \small
+    Fixing those two things is what ``Transform'' will mean today.
+  \end{aside}
+\end{frame}
+
+% ==================================================================
+\begin{frame}[fragile]{Extract: read, and change nothing}
+\begin{lstlisting}
+def extract(data_dir):
+    """Read every daily sales file and stack them into one DataFrame."""
+    files = sorted(data_dir.glob("sales_2027-*.csv"))
+    frames = [pd.read_csv(f) for f in files]
+    return pd.concat(frames, ignore_index=True)
+\end{lstlisting}
+  \Out
+\begin{lstlisting}[language=]
+107 rows from 3 files
+\end{lstlisting}
+
+  \pause
+  \begin{aside}
+    \small
+    \textbf{Extract is deliberately boring.} Keeping the raw data untouched means that when something
+    goes wrong later, you know where to start again.
+  \end{aside}
+\end{frame}
+
+% ==================================================================
+\begin{frame}[fragile]{What \texttt{glob} is for}
+\begin{lstlisting}
+files = ["sales_2027-03-02.csv", "sales_2027-03-03.csv", ...]  # breaks Friday
+files = sorted(data_dir.glob("sales_2027-*.csv"))              # just works
+\end{lstlisting}
+
+  \pause
+  \begin{itemize}[<+->]
+    \item \py{glob} finds files by \alert{pattern} instead of by name.
+    \item So tomorrow's file is picked up without editing the code.
+    \item The pattern also \emph{excludes} \py{menu.csv}, which lives in the same folder.
+    \item \py{sorted} matters: \py{glob} returns files in filesystem order, not date order.
+  \end{itemize}
+\end{frame}
+
+% ==================================================================
+\section{Transform}
+
+\begin{frame}[fragile]{Step 1 \textemdash{} make the price a number}
+\begin{lstlisting}
+df["unit_price"] = (df["unit_price"]
+                      .str.replace("$", "", regex=False)
+                      .astype(float))
+\end{lstlisting}
+  \Out
+\begin{lstlisting}[language=]
+before: $4.00   (a str)
+after : 4.0     (a float64)
+\end{lstlisting}
+
+  \pause
+  \begin{aside}
+    \small
+    \py{regex=False} because \py{\$} means ``end of string'' in a regular expression. Here we want the
+    literal dollar sign.
+  \end{aside}
+\end{frame}
+
+% ==================================================================
+\begin{frame}[fragile]{Step 2 \textemdash{} make the date a real date}
+\begin{lstlisting}
+df["sale_date"] = pd.to_datetime(df["sale_date"], format="%Y-%m-%d")
+\end{lstlisting}
+
+  \pause
+  \begin{itemize}[<+->]
+    \item A date stored as text is just a string.
+    \item You cannot sort it reliably, subtract it, or ask what day of the week it was.
+    \item Convert it \emph{once}, here, and every later step gets a real date.
+  \end{itemize}
+\end{frame}
+
+% ==================================================================
+\begin{frame}[fragile]{Step 3 \textemdash{} clean the item names}
+\begin{lstlisting}
+df["item"] = df["item"].str.strip().str.title()
+\end{lstlisting}
+  \Out
+\begin{lstlisting}[language=]
+distinct spellings before: 29
+distinct item names after:  8
+\end{lstlisting}
+
+  \pause
+  \begin{itemize}[<+->]
+    \item \py{.str.strip()} removes spaces at the ends \textemdash{} \py{"  Latte "} becomes
+          \py{"Latte"}.
+    \item \py{.str.title()} capitalises each word \textemdash{} \py{"LATTE"} and \py{"latte"} both
+          become \py{"Latte"}.
+  \end{itemize}
+\end{frame}
+
+% ==================================================================
+\begin{frame}[fragile]{Step 4 \textemdash{} join the menu, then calculate}
+\begin{lstlisting}
+df = df.merge(menu, on="item", how="left")
+df["revenue"] = (df["qty"] * df["unit_price"]).round(2)
+\end{lstlisting}
+
+  \pause
+  \begin{ask}
+    \small
+    Why did step 3 have to come \emph{before} step 4?
+  \end{ask}
+
+  \pause
+  \begin{watch}
+    \small
+    \py{"latte"} would not have matched \py{"Latte"} in the menu. That sale would have had no
+    category, and its revenue would have \alert{quietly vanished} from the report.
+  \end{watch}
+\end{frame}
+
+% ==================================================================
+\begin{frame}{Two checks after every join}
+  \begin{itemize}[<+->]
+    \item \textbf{Did the row count stay the same?} 107 in, 107 out.
+    \item If it grew, the reference table has duplicate rows and every sale got counted twice.
+    \item \textbf{Did anything fail to match?} Zero unmatched here.
+    \item A blank category means a spelling your cleaning step missed.
+  \end{itemize}
+
+  \pause\vfill
+  \begin{prac}
+    \small
+    Print both numbers. A join that silently doubled your data looks exactly like one that worked.
+  \end{prac}
+\end{frame}
+
+% ==================================================================
+\section{Load}
+
+\begin{frame}{Two outputs, two audiences}
+  \begin{itemize}[<+->]
+    \item A \textbf{database table} \textemdash{} for anyone who wants to query it.
+    \item A \textbf{summary CSV} \textemdash{} for the manager who just wants the daily numbers.
+  \end{itemize}
+
+  \pause\vfill
+  \begin{aside}
+    \small
+    ``Load'' does not mean one place. It means wherever the people who need the answer will actually
+    look.
+  \end{aside}
+\end{frame}
+
+% ==================================================================
+\begin{frame}[fragile]{Load}
+\begin{lstlisting}
+con = sqlite3.connect("cafe.db")
+out.to_sql("sales", con, if_exists="replace", index=False)
+con.close()
+
+summary.to_csv("daily_summary.csv", index=False)
+\end{lstlisting}
+
+  \pause
+  \begin{aside}
+    \small
+    Dates go into SQLite as \py{'YYYY-MM-DD'} text, because SQLite has no date type \textemdash{} and
+    in that format, alphabetical order \emph{is} chronological order.
+  \end{aside}
+\end{frame}
+
+% ==================================================================
+\begin{frame}{The result}
+  \small
+  \begin{tabular}{@{}llrr@{}}
+    \toprule
+    \textbf{sale\_date} & \textbf{category} & \textbf{items\_sold} & \textbf{revenue} \\
+    \midrule
+    \onslide<+->{2027-03-02} & \onslide<.->{Drink} & \onslide<.->{35} & \onslide<.->{\$119.75} \\
+    \onslide<+->{2027-03-02} & \onslide<.->{Food}  & \onslide<.->{40} & \onslide<.->{\$222.85} \\
+    \onslide<+->{2027-03-03} & \onslide<.->{Drink} & \onslide<.->{48} & \onslide<.->{\$162.80} \\
+    \onslide<+->{2027-03-03} & \onslide<.->{Food}  & \onslide<.->{29} & \onslide<.->{\$112.40} \\
+    \onslide<+->{2027-03-04} & \onslide<.->{Drink} & \onslide<.->{39} & \onslide<.->{\$124.30} \\
+    \onslide<+->{2027-03-04} & \onslide<.->{Food}  & \onslide<.->{29} & \onslide<.->{\$126.25} \\
+    \midrule
+    \onslide<+->{\textbf{Total}} & & & \onslide<.->{\textbf{\$868.35}} \\
+    \bottomrule
+  \end{tabular}
+
+  \onslide<8->{\vfill
+  \begin{aside}
+    \small
+    107 sales over three days, from two messy columns and a join.
+  \end{aside}}
+\end{frame}
+
+% ==================================================================
+\section{The whole thing, in one function}
+
+\begin{frame}[fragile]{\texttt{run\_pipeline()}}
+\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+def run_pipeline(data_dir=DATA, db_path="cafe.db", csv_path="daily_summary.csv"):
+    """Extract -> Transform -> Load. Run this every morning."""
+    menu  = pd.read_csv(data_dir / "menu.csv")
+
+    raw   = extract(data_dir)                       # E
+    clean = transform(raw, menu)                    # T
+
+    assert clean["category"].notna().all(), "some items did not match the menu"
+    assert (clean["revenue"] > 0).all(),    "a sale has zero or negative revenue"
+
+    summary = (clean
+               .assign(day=clean["sale_date"].dt.date)
+               .groupby(["day", "category"], as_index=False)
+               .agg(items_sold=("qty", "sum"), revenue=("revenue", "sum"))
+               .rename(columns={"day": "sale_date"}))
+
+    load(clean, summary, db_path, csv_path)         # L
+    return clean, summary
+\end{lstlisting}
+
+  \pause
+  \begin{aside}
+    \small
+    Twelve lines. \alert{This is the deliverable} \textemdash{} not the notebook, the function.
+  \end{aside}
+\end{frame}
+
+% ==================================================================
+\begin{frame}{Why a function, and not just cells?}
+  \begin{itemize}[<+->]
+    \item \textbf{It has a name.}
+    \item You can say ``run \py{run\_pipeline()}'' instead of ``run cells 4 to 19 but not cell 12''.
+    \item \textbf{It takes arguments.}
+    \item Point it at a different folder and it works on different data.
+    \item \textbf{It can be scheduled.}
+    \item A computer can call a function at 6 a.m. It cannot click through a notebook.
+  \end{itemize}
+\end{frame}
+
+% ==================================================================
+\section{Protecting it}
+
+\begin{frame}[fragile]{Run it twice}
+\begin{lstlisting}
+run_pipeline()
+run_pipeline()          # on purpose
+\end{lstlisting}
+
+  \pause
+  \begin{ask}
+    \small
+    How many rows are in the table now?
+  \end{ask}
+
+  \pause
+\begin{lstlisting}[language=]
+rows in the sales table: 107        <-- not 214
+\end{lstlisting}
+
+  \pause
+  \begin{aside}
+    \small
+    Running it twice gave the same answer as running it once. That property has a name: the pipeline
+    is \alert{idempotent}.
+  \end{aside}
+\end{frame}
+
+% ==================================================================
+\begin{frame}[fragile]{One keyword makes the difference}
+\begin{lstlisting}
+out.to_sql("sales", con, if_exists="replace", index=False)   # yes
+out.to_sql("sales", con, if_exists="append",  index=False)   # NO
+\end{lstlisting}
+
+  \pause
+  \begin{watch}
+    \small
+    With \py{append}, every run adds another copy. Run it three times and the caf\'e has sold
+    everything three times.
+
+    \medskip
+    This is the \alert{single most common bug in a first pipeline}.
+  \end{watch}
+\end{frame}
+
+% ==================================================================
+\begin{frame}[fragile]{A log line per step}
+\begin{lstlisting}[language=]
+  EXTRACT    107 rows read
+  TRANSFORM  107 rows cleaned, 8 distinct items
+  LOAD       107 rows written, revenue $868.35
+\end{lstlisting}
+
+  \pause
+  \begin{itemize}[<+->]
+    \item Three \py{print} statements.
+    \item Now when the job runs at 6 a.m.\ and something looks odd \ldots{}
+    \item \ldots{} you can see \alert{which step} the rows disappeared at, instead of guessing.
+  \end{itemize}
+\end{frame}
+
+% ==================================================================
+\begin{frame}[fragile]{A check before you publish}
+\begin{lstlisting}
+assert clean["category"].notna().all(), "some items did not match the menu"
+assert (clean["revenue"] > 0).all(),    "a sale has zero or negative revenue"
+\end{lstlisting}
+
+  \pause
+  \begin{itemize}[<+->]
+    \item An \textbf{assertion} is a sentence that must be true.
+    \item If it is not, Python stops immediately and tells you why.
+  \end{itemize}
+
+  \pause
+  \begin{ask}
+    \small
+    Where in the pipeline should these two lines go?
+  \end{ask}
+\end{frame}
+
+% ==================================================================
+\begin{frame}{Between Transform and Load}
+  \begin{itemize}[<+->]
+    \item That is the \alert{last moment} before the numbers reach somebody else.
+    \item If a check fails, the pipeline stops \emph{before} writing to the database.
+    \item The manager's report is still yesterday's.
+    \item Which is correct \textemdash{} and much better than today's report being wrong.
+  \end{itemize}
+
+  \pause\vfill
+  \begin{prac}
+    \small
+    A pipeline that publishes a wrong number is worse than a pipeline that publishes nothing.
+  \end{prac}
+\end{frame}
+
+% ==================================================================
+\begin{frame}[fragile]{Watch a check fail}
+\begin{lstlisting}
+broken = clean.copy()
+broken.loc[0, "revenue"] = -5.0          # pretend the transform has a bug
+
+assert (broken["revenue"] > 0).all(), "a sale has zero or negative revenue"
+\end{lstlisting}
+  \Out
+\begin{lstlisting}[language=]
+Pipeline stopped: a sale has zero or negative revenue
+\end{lstlisting}
+
+  \pause
+  \begin{aside}
+    \small
+    Nothing was written to the database. The bad number never left the building.
+  \end{aside}
+\end{frame}
+
+% ==================================================================
+\begin{frame}[fragile]{The same summary, in SQL}
+\begin{lstlisting}[language=SQL,basicstyle=\ttfamily\footnotesize,
+                   keywordstyle=\color{accent}\bfseries]
+SELECT sale_date, category,
+       SUM(qty)               AS items_sold,
+       ROUND(SUM(revenue), 2) AS revenue
+FROM   sales
+GROUP  BY sale_date, category
+ORDER  BY sale_date, category;
+\end{lstlisting}
+
+  \pause
+  \begin{aside}
+    \small
+    Once the data is in the database, the report is one query. Same answer, different language.
+  \end{aside}
+\end{frame}
+
+% ==================================================================
+\begin{frame}{pandas or SQL?}
+  \small
+  \begin{tabular}{@{}p{6.2cm}p{6.2cm}@{}}
+    \toprule
+    \textbf{Use pandas when} & \textbf{Use SQL when} \\
+    \midrule
+    \onslide<+->{reading files and cleaning text}
+      & \onslide<.->{the data is already in a database} \\[3pt]
+    \onslide<+->{the step is awkward to express in SQL}
+      & \onslide<.->{the data is too big for memory} \\[3pt]
+    \onslide<+->{you are still exploring}
+      & \onslide<.->{the question is a standard group-and-total} \\
+    \bottomrule
+  \end{tabular}
+
+  \onslide<4->{\vfill
+  \begin{aside}
+    \small
+    Most real pipelines use both: pandas to clean and load, SQL to query afterwards. That is exactly
+    what we did.
+  \end{aside}}
+\end{frame}
+
+% ==================================================================
+\section*{Summary}
+
+\begin{frame}{Five things to remember}
+  \begin{enumerate}[<+->]
+    \item \textbf{Extract changes nothing.} Keep the raw data raw, so you can always start over.
+    \item \textbf{Clean before you join.} \py{"latte"} does not match \py{"Latte"}.
+    \item \textbf{Check the row count after every join.} Same number in, same number out.
+    \item \textbf{Make it runnable twice.} \py{if\_exists="replace"}, not \py{"append"}.
+    \item \textbf{Put the checks between Transform and Load.}
+  \end{enumerate}
+\end{frame}
+
+% ==================================================================
+\begin{frame}{The one-sentence version}
+  \vfill
+  \begin{center}
+    {\large A pipeline is just \alert{three functions and a schedule}.}
+  \end{center}
+  \pause
+  \vfill
+  \begin{center}
+    {\large The difference between a pipeline and a notebook\\[4pt]
+     is that \alert{somebody else can run it}.}
+  \end{center}
+  \vfill
+\end{frame}
+
+% ==================================================================
+\begin{frame}{In-class activity}
+  \begin{exmp}[title=Founders Library checkouts]
+    \small
+    Three daily files. \py{loan\_days} arrives as \py{"14 days"}. \py{patron\_type} is typed
+    inconsistently. Build the pipeline.
+  \end{exmp}
+
+  \pause
+  \begin{itemize}[<+->]
+    \item Six tasks, about 35 minutes, in pairs.
+    \item Same five components \textemdash{} only the data is different.
+    \item Notebook: \py{ETL\_Activity.ipynb}
+  \end{itemize}
+
+  \pause\vfill
+  \begin{prac}
+    \small
+    Expected: \textbf{82 rows}, \textbf{16 spellings become 4}, and the table still says 82 after you
+    run it twice.
+  \end{prac}
+\end{frame}
+
+\end{document}

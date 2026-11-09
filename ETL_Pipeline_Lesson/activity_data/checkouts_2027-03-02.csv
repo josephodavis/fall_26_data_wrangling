@@ -1,0 +1,27 @@
+checkout_id,checkout_date,book_id,patron_type,loan_days
+C-7001,2027-03-02,BK-106,STAFF,14 days
+C-7002,2027-03-02,BK-107,Faculty,7 days
+C-7003,2027-03-02,BK-106,GRADUATE,28 days
+C-7004,2027-03-02,BK-106,GRADUATE,21 days
+C-7005,2027-03-02,BK-102, Staff  ,28 days
+C-7006,2027-03-02,BK-101, Undergrad  ,21 days
+C-7007,2027-03-02,BK-107,Graduate,14 days
+C-7008,2027-03-02,BK-101,STAFF,7 days
+C-7009,2027-03-02,BK-106,faculty,21 days
+C-7010,2027-03-02,BK-104, Undergrad  ,7 days
+C-7011,2027-03-02,BK-107,Faculty,21 days
+C-7012,2027-03-02,BK-105,undergrad,7 days
+C-7013,2027-03-02,BK-108,Undergrad,21 days
+C-7014,2027-03-02,BK-104, Undergrad  ,28 days
+C-7015,2027-03-02,BK-107,Staff,21 days
+C-7016,2027-03-02,BK-107,faculty,21 days
+C-7017,2027-03-02,BK-105, Faculty  ,7 days
+C-7018,2027-03-02,BK-101,undergrad,14 days
+C-7019,2027-03-02,BK-102,undergrad,21 days
+C-7020,2027-03-02,BK-105,Undergrad,7 days
+C-7021,2027-03-02,BK-102, Graduate  ,21 days
+C-7022,2027-03-02,BK-101,Graduate,21 days
+C-7023,2027-03-02,BK-101,faculty,7 days
+C-7024,2027-03-02,BK-104,Graduate,21 days
+C-7025,2027-03-02,BK-107,STAFF,14 days
+C-7026,2027-03-02,BK-105,Undergrad,14 days

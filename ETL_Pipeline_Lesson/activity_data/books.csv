@@ -1,0 +1,9 @@
+book_id,title,genre,replacement_cost
+BK-101,Introductory Statistics,Mathematics,89.0
+BK-102,"A History of Washington, DC",History,42.5
+BK-103,Organic Chemistry,Science,134.0
+BK-104,Poems of the Harlem Era,Literature,28.75
+BK-105,Linear Algebra Done Right,Mathematics,64.0
+BK-106,Public Health Policy,Health,71.25
+BK-107,Jazz and the American City,Music,38.0
+BK-108,Databases: A First Course,Computing,95.5
