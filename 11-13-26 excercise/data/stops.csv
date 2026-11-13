@@ -1,0 +1,13 @@
+stop_id,stop_name,route_id,stop_seq
+101,Founders Library,A,1
+102,Blackburn Center,A,2
+103,Annex I,A,3
+104,Bethune Hall,A,4
+105,Tubman Quadrangle,A,5
+201,Howard Plaza Towers,B,1
+202,Georgia Ave & Fairmont,B,2
+203,West Campus Gate,B,3
+204,School of Law,B,4
+301,Howard University Hosp,C,1
+302,College of Medicine,C,2
+303,Georgia Ave & Columbia,C,3
