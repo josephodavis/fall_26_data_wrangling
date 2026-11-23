@@ -1,0 +1,11 @@
+station_id,station_name,capacity,lat,lon
+ST01,Howard Center,24,38.9227,-77.0194
+ST02,Founders Library,32,38.9224,-77.0206
+ST03,Blackburn Center,28,38.9219,-77.0199
+ST04,Engineering Quad,16,38.9235,-77.0188
+ST05,Shaw Metro,40,38.9129,-77.0219
+ST06,Georgia Ave & Euclid,20,38.9245,-77.0231
+ST07,Banneker Field,12,38.9251,-77.021
+ST08,Cook Hall,18,38.9216,-77.0221
+ST09,Mordecai Johnson,0,38.923,-77.0203
+ST10,Tubman Quad,22,,
